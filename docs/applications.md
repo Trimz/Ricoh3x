@@ -39,6 +39,7 @@ The camera works in coarse −4…+4 steps, so the mapping is lossy.
 
 ## Ideas
 
-- Back up / restore all settings (needs a read-back path, see open-questions.md).
+- Back up all settings (`dd_out` + `tools/dom_parse.py`); restore by replaying `UserData Set`
+  lines generated from a decoded export (safer than `dd_in`).
 - Load user modes U1–U3 from a card.
 - Set LCD calibration, button layouts and display overlays in bulk.

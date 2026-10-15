@@ -19,5 +19,6 @@ Card layouts are in [`sdcard/`](../sdcard).
 | 4 | 2026-10-15 | `step4_userdata_set` | normal | `UserData Set StillImageControlNo2 Standard` + `…No2ParamStandardSaturation P2` → menu shows Custom 2 = Standard, Saturation +2 |
 | 4b | 2026-10-15 | (script removed) | normal | Custom 2 still Saturation +2: **persistent** |
 | 5 | 2026-10-15 | `step5_export_settings` | normal | `sendln 'dd_out'` wrote `C:\KB609.DOM` (150,512 bytes); boot normal. Chunks APP/HT/FE/INF/PF/DC. |
+| 6 | 2026-10-15 | `step6_export_diff` | normal | export A, set Custom 2 Std saturation P3, export B, set P2, export C. `filerename` works. A and B = factory defaults (too early in boot); C = real values and differs from A exactly at table offsets 0x1c0/0x1c2/0x38c → **APData01 offset = store offset**. Parsed C confirmed by the user in the menus. Script ran on two boots. |
 
 Exception logs: `camlogs/2d` (from tests 2–2d), `camlogs/3b` (test 3).

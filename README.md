@@ -24,7 +24,7 @@ reboots. No firmware modification is involved.
 | Run internal shell commands from a script (584 commands) | working; some crash | [scripting.md](docs/scripting.md) |
 | **Write any UserData setting by name** (1,036 items, value tables) | working; 2 items verified on camera | [settings.md](docs/settings.md) |
 | Image Control Custom 1/2 (all parameters per base effect) | working | [image-control.md](docs/image-control.md) |
-| Export all settings to the card (`dd_out` → `KB609.DOM`) | working; field mapping in progress | [settings.md](docs/settings.md#exporting-all-settings-read-back) |
+| **Read all settings**: export (`dd_out` → `KB609.DOM`) + decoder `tools/dom_parse.py` | working, verified against the menus | [settings.md](docs/settings.md#exporting-all-settings-read-back) |
 | camctl remote-control commands (93) | documented, untested | [interfaces.md](docs/interfaces.md) |
 | Crash / debug logs to the card | working | [scripting.md](docs/scripting.md#logs) |
 | Wi-Fi HTTP API, Linux side, USB/MTP | endpoints listed; effect selection only / MTP setters dead | [interfaces.md](docs/interfaces.md) |
@@ -40,6 +40,9 @@ reboots. No firmware modification is involved.
    sendln 'UserData Set StillImageControlNo2ParamStandardSaturation P2'
    ```
 3. Power on normally. Then **delete the script** from the card.
+4. To read everything back: a script with `sendln 'dd_out'` (export at power-off or after
+   other commands, not as the first line), then
+   `python3 -I tools/dom_parse.py KB609.DOM data/userdata_set_values.tsv`.
 
 Valid item names and values: [data/userdata_set_values.tsv](data/userdata_set_values.tsv).
 

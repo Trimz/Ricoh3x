@@ -134,9 +134,22 @@ Format: chunks `[char tag[4]][u32 len][data]`, tags `APP`, `HT`, `FE`, `INF`, `P
 size, then the data. `APP` contains `APData00`–`APData11`; `APData01`–`08` (0xb26 bytes
 each) are the 8 UserData struct copies, fields stored little-endian.
 
-Mapping file offsets to the RAM `store` offsets above is **not finished** (they don't line
-up 1:1 for every field). The safe way to pin it down is a diff test: export, change one
-known setting, export again. See open-questions.md.
+**Field mapping (verified, test 6):** inside `APData01.bin` every item sits at exactly its
+`store` offset from the table (`u8@0x38c` → byte `0x38c`, little-endian for u16/u32/f32).
+`APData02`–`08` are the other struct copies (`*8` items are written to all of them).
+`tools/dom_parse.py` decodes an export:
+
+```
+python3 -I tools/dom_parse.py KB609.DOM data/userdata_set_values.tsv [name-filter]
+```
+
+1,034 items decode; the user confirmed Image Control slot, Custom 2 saturation, ISO auto
+limits, auto power off, focus mode and snap distance against the camera menus.
+
+**Timing:** an export taken as the very first action of `startup.ttl` returned factory
+defaults (the saved settings were not loaded yet), and a setting changed right after it
+did not show up in the next export either. A later export in the same boot had the real
+values. Export at power-off (`shutdown.ttl`) or after other work in the script.
 
 The import direction (`dd_in`, `[USR_DAT_WRITE]`) restores a whole package and is on the
 do-not-run list until the format is fully understood.

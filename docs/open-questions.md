@@ -2,10 +2,9 @@
 
 ## Reading values back (highest priority)
 
-**Partly solved:** `dd_out` exports all settings to `C:\KB609.DOM` (settings.md). Remaining:
-map each item's RAM offset (`store` column) to its position in the exported sub-records.
-Plan: one boot that exports, changes one known setting, exports again (renaming the file
-in between with TTL `filerename`), then sets it back and exports a third time; diff the files.
+**Solved:** `dd_out` exports all settings and `tools/dom_parse.py` decodes them
+(settings.md). Remaining: when exactly during boot the saved settings become available,
+and the meaning of the other sub-records (`APData09`/`10`, `HT`, `INF`, `PF`, `DC`).
 
 Older notes:
 

@@ -1,0 +1,20 @@
+; step6 startup: export, change Custom2 Standard saturation P2->P3, export, revert to P2, export.
+filecreate fh 'C:\ttl_6.txt'
+filewriteln fh 'start'
+fileclose fh
+sendln 'dd_out'
+filerename 'C:\KB609.DOM' 'C:\A.DOM'
+fileopen fh 'C:\ttl_6.txt' 1
+filewriteln fh 'export A done'
+fileclose fh
+sendln 'UserData Set StillImageControlNo2ParamStandardSaturation P3'
+sendln 'dd_out'
+filerename 'C:\KB609.DOM' 'C:\B.DOM'
+fileopen fh 'C:\ttl_6.txt' 1
+filewriteln fh 'set P3 + export B done'
+fileclose fh
+sendln 'UserData Set StillImageControlNo2ParamStandardSaturation P2'
+sendln 'dd_out'
+fileopen fh 'C:\ttl_6.txt' 1
+filewriteln fh 'reverted P2 + export C (KB609.DOM) done'
+fileclose fh
