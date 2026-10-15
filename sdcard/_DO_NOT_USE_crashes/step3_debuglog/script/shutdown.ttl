@@ -1,0 +1,17 @@
+; step3 shutdown: safe camprop path (null-checked manager), saturation only, then copy debug log
+foldercreate 'C:\grlog'
+filecreate fh 'C:\ttl_3.txt'
+filewriteln fh 'start'
+fileclose fh
+sendln 'camprop_get_current 128'
+fileopen fh 'C:\ttl_3.txt' 1
+filewriteln fh 'after get_current 128'
+fileclose fh
+sendln 'camprop_get_setting 128'
+fileopen fh 'C:\ttl_3.txt' 1
+filewriteln fh 'after get_setting 128'
+fileclose fh
+sendln 'SYS_copylog C:\grlog C:\grlog'
+fileopen fh 'C:\ttl_3.txt' 1
+filewriteln fh 'copylog called'
+fileclose fh

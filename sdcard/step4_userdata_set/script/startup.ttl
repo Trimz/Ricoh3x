@@ -1,0 +1,12 @@
+; step4 startup: set Custom2 = Standard, saturation +2 via UserData debug shell
+filecreate fh 'C:\ttl_4.txt'
+filewriteln fh 'start'
+fileclose fh
+sendln 'UserData Set StillImageControlNo2 Standard'
+fileopen fh 'C:\ttl_4.txt' 1
+filewriteln fh 'after set base'
+fileclose fh
+sendln 'UserData Set StillImageControlNo2ParamStandardSaturation P2'
+fileopen fh 'C:\ttl_4.txt' 1
+filewriteln fh 'after set saturation'
+fileclose fh

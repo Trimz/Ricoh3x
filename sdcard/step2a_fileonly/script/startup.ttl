@@ -1,0 +1,4 @@
+; 2a: no shell commands, just write a file to the SD card
+filecreate fh 'C:\ttl_a.txt'
+filewriteln fh 'script ran'
+fileclose fh

@@ -1,0 +1,6 @@
+; 2c startup: run a harmless command, then dump the internal log to the card
+sendln 'CPU_buildinfo'
+sendln 'SYS_copylog'
+filecreate fh 'C:\ttl_c_start.txt'
+filewriteln fh 'startup done'
+fileclose fh

@@ -1,0 +1,15 @@
+# Ricoh firmware and everything derived from it (copyrighted, large)
+fw/
+lx/
+rootfs/
+out/
+gproj/
+gproj_ldr/
+gproj_mtp/
+*.bin
+*.zip
+*.gpr
+*.rep/
+
+.DS_Store
+._*

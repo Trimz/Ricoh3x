@@ -1,0 +1,41 @@
+; Read-only probe: logs supported + current values of Image Control properties, then copies the log to the SD card.
+; custom image (0x6f)
+sendln 'camprop_get_support_wo_linux 111'
+sendln 'camprop_get_current_wo_linux 111'
+; saturation (0x80)
+sendln 'camprop_get_support_wo_linux 128'
+sendln 'camprop_get_current_wo_linux 128'
+; hue (0x82)
+sendln 'camprop_get_support_wo_linux 130'
+sendln 'camprop_get_current_wo_linux 130'
+; high/low key (0x84)
+sendln 'camprop_get_support_wo_linux 132'
+sendln 'camprop_get_current_wo_linux 132'
+; filter effect (0x86)
+sendln 'camprop_get_support_wo_linux 134'
+sendln 'camprop_get_current_wo_linux 134'
+; monotone toning (0x88)
+sendln 'camprop_get_support_wo_linux 136'
+sendln 'camprop_get_current_wo_linux 136'
+; bleach bypass toning (0x8a)
+sendln 'camprop_get_support_wo_linux 138'
+sendln 'camprop_get_current_wo_linux 138'
+; sharpness type (0x8c)
+sendln 'camprop_get_support_wo_linux 140'
+sendln 'camprop_get_current_wo_linux 140'
+; sharpness (0x8e)
+sendln 'camprop_get_support_wo_linux 142'
+sendln 'camprop_get_current_wo_linux 142'
+; contrast (0x90)
+sendln 'camprop_get_support_wo_linux 144'
+sendln 'camprop_get_current_wo_linux 144'
+; contrast highlight (0x92)
+sendln 'camprop_get_support_wo_linux 146'
+sendln 'camprop_get_current_wo_linux 146'
+; contrast shadow (0x94)
+sendln 'camprop_get_support_wo_linux 148'
+sendln 'camprop_get_current_wo_linux 148'
+; cross process (0x99)
+sendln 'camprop_get_support_wo_linux 153'
+sendln 'camprop_get_current_wo_linux 153'
+sendln 'SYS_copylog'

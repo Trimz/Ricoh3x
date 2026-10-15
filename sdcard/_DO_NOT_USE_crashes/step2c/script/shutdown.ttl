@@ -1,0 +1,9 @@
+; 2c shutdown: read ONE setting (saturation) at power-off, with markers
+filecreate fh 'C:\ttl_c_shut.txt'
+filewriteln fh 'before camprop'
+fileclose fh
+sendln 'camprop_get_current_wo_linux 128'
+fileopen fh 'C:\ttl_c_shut.txt' 1
+filewriteln fh 'after camprop'
+fileclose fh
+sendln 'SYS_copylog'

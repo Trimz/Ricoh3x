@@ -1,0 +1,12 @@
+; 2b: one harmless shell command, logging before and after
+filecreate fh 'C:\ttl_b.txt'
+filewriteln fh 'before sendln'
+fileclose fh
+sendln 'CPU_buildinfo'
+int2str r result
+fileopen fh 'C:\ttl_b.txt' 1
+filewriteln fh 'after sendln, result='
+filewriteln fh r
+filewriteln fh 'inputstr='
+filewriteln fh inputstr
+fileclose fh

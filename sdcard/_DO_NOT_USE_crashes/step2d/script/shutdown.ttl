@@ -1,0 +1,74 @@
+; 2d shutdown: read-only dump of all Image Control props, then copy logs to C:\grlog
+foldercreate 'C:\grlog'
+filecreate fh 'C:\ttl_d.txt'
+filewriteln fh 'start'
+fileclose fh
+sendln 'camprop_get_support_wo_linux 111'
+sendln 'camprop_get_current_wo_linux 111'
+fileopen fh 'C:\ttl_d.txt' 1
+filewriteln fh 'done 111 custom '
+fileclose fh
+sendln 'camprop_get_support_wo_linux 128'
+sendln 'camprop_get_current_wo_linux 128'
+fileopen fh 'C:\ttl_d.txt' 1
+filewriteln fh 'done 128 saturation '
+fileclose fh
+sendln 'camprop_get_support_wo_linux 130'
+sendln 'camprop_get_current_wo_linux 130'
+fileopen fh 'C:\ttl_d.txt' 1
+filewriteln fh 'done 130 hue '
+fileclose fh
+sendln 'camprop_get_support_wo_linux 132'
+sendln 'camprop_get_current_wo_linux 132'
+fileopen fh 'C:\ttl_d.txt' 1
+filewriteln fh 'done 132 key '
+fileclose fh
+sendln 'camprop_get_support_wo_linux 134'
+sendln 'camprop_get_current_wo_linux 134'
+fileopen fh 'C:\ttl_d.txt' 1
+filewriteln fh 'done 134 filter '
+fileclose fh
+sendln 'camprop_get_support_wo_linux 136'
+sendln 'camprop_get_current_wo_linux 136'
+fileopen fh 'C:\ttl_d.txt' 1
+filewriteln fh 'done 136 monotoning '
+fileclose fh
+sendln 'camprop_get_support_wo_linux 138'
+sendln 'camprop_get_current_wo_linux 138'
+fileopen fh 'C:\ttl_d.txt' 1
+filewriteln fh 'done 138 bleachtoning '
+fileclose fh
+sendln 'camprop_get_support_wo_linux 140'
+sendln 'camprop_get_current_wo_linux 140'
+fileopen fh 'C:\ttl_d.txt' 1
+filewriteln fh 'done 140 sharptype '
+fileclose fh
+sendln 'camprop_get_support_wo_linux 142'
+sendln 'camprop_get_current_wo_linux 142'
+fileopen fh 'C:\ttl_d.txt' 1
+filewriteln fh 'done 142 sharpness '
+fileclose fh
+sendln 'camprop_get_support_wo_linux 144'
+sendln 'camprop_get_current_wo_linux 144'
+fileopen fh 'C:\ttl_d.txt' 1
+filewriteln fh 'done 144 contrast '
+fileclose fh
+sendln 'camprop_get_support_wo_linux 146'
+sendln 'camprop_get_current_wo_linux 146'
+fileopen fh 'C:\ttl_d.txt' 1
+filewriteln fh 'done 146 contrast_hl '
+fileclose fh
+sendln 'camprop_get_support_wo_linux 148'
+sendln 'camprop_get_current_wo_linux 148'
+fileopen fh 'C:\ttl_d.txt' 1
+filewriteln fh 'done 148 contrast_sh '
+fileclose fh
+sendln 'camprop_get_support_wo_linux 153'
+sendln 'camprop_get_current_wo_linux 153'
+fileopen fh 'C:\ttl_d.txt' 1
+filewriteln fh 'done 153 xprocess '
+fileclose fh
+sendln 'SYS_copylog C:\grlog C:\grlog'
+fileopen fh 'C:\ttl_d.txt' 1
+filewriteln fh 'copylog called'
+fileclose fh
