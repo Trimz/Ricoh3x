@@ -1,0 +1,75 @@
+# Script engine, internal shell, logs
+
+Read [SAFETY.md](SAFETY.md) first. Scripts need `[SCRIPT_EN_MODE EN]` once
+([modeset.md](modeset.md)).
+
+## Script files
+
+| File | When it runs |
+|---|---|
+| `C:\script\startup.ttl` | every **normal** power-on (verified) |
+| `C:\script\shutdown.ttl` | every power-off (verified) |
+| `C:\script\dbgparam.ttl` | unknown, untested |
+
+`C:\` is the SD card root. Use CRLF line endings. Scripts run on **every**
+boot/power-off while they are on the card, so remove them after use.
+
+## Language
+
+A Tera Term macro (TTL) interpreter. Keyword table `FUN_538c343c`, statement
+dispatch `FUN_538c1258`, run loop `FUN_538bc080` (called from the "Script" task
+at `0x536bc5e4`). Errors are reported by `FUN_538c3148` (logged, script stops);
+they do not hang the camera.
+
+Verified: `filecreate`, `fileopen h 'path' 1` (append), `filewriteln`, `fileclose`,
+`foldercreate`, `int2str`, `sendln`. The keyword table also has the usual TTL
+file/string/control commands (`fileread*`, `strcompare`, `if/while/until`,
+`mpause`, `messagebox`, …), all untested.
+
+- `sendln '<shell command line>'` (token 0x4e, `FUN_538c06ac`) runs an internal
+  shell command through a callback and sets `result` (0 observed). Shell output
+  is **not** captured in `inputstr`; it goes to the debug log.
+- `execcmnd` is *not* a shell exec. It runs a string as a TTL line.
+- `filecreate` on an existing file does not truncate it; it writes from offset 0.
+
+Marker pattern (use for every experiment):
+
+```
+filecreate fh 'C:\marks.txt'
+filewriteln fh 'start'
+fileclose fh
+sendln 'UserData Set StillJpegSize L'
+fileopen fh 'C:\marks.txt' 1
+filewriteln fh 'after jpegsize'
+fileclose fh
+```
+
+## Internal shell
+
+585 commands, table in the RTOS image: [`data/shell_commands.tsv`](../data/shell_commands.tsv).
+Most handlers print a usage line when called without arguments (or with an `h` option). Families by prefix:
+
+| Prefix | Area |
+|---|---|
+| `UserData` | **settings Get/Set**, see [settings.md](settings.md) |
+| `camctl_*` | high-level camera control used by the Wi-Fi app (get/set exposure, drive, image ctrl …) |
+| `camprop_*` | property store, **crashes** (see SAFETY.md) |
+| `med_*`, `ftest_*`, `file_*`, `dir` | file system / media |
+| `SYS_*`, `sys_*`, `inf_*`, `llog_*` | system, logs, factory |
+| `wlan_*`, `ble_*`, `ipcu_*`, `ifcmd_*` | wireless and the Linux co-processor link |
+| `CAP_*`, `FE_*`, `BE_*`, `VIEW_*`, `AE_*`, `SR_*`, `Playback_*`, `MOVIE_*` | imaging pipeline and hardware |
+
+Smoke-test command: `CPU_buildinfo` (harmless, used in test 2b).
+
+## Logs
+
+- `sendln 'SYS_copylog C:\grlog C:\grlog'` copies stored debug-log slots to
+  `<dir>\log%d.txt` and exception logs to `<dir>\except%d.txt`. It needs a
+  directory argument (the handler reads argv[2], so pass it twice). Without one it
+  only prints usage.
+- Exception logs contain the PC, registers, a stack backtrace, the build's git
+  revision and, once `DBG_LOG_STORE_EN_MODE` is on, a **"Flush Log"** with the last
+  debug-log lines, which shows the exact script line and shell output before a crash.
+- Debug-log slots (`log%d.txt`) have not appeared yet. See open-questions.md.
+
+Example logs: [`camlogs/`](../camlogs).

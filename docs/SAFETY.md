@@ -24,7 +24,7 @@ case brick the camera.
    shows exactly which line was responsible.
 5. **Read-only before write.** Prove a command path is harmless before using it
    to write. Prefer setters that the camera's own menu uses (the `UserData`
-   shell, see IMAGE_CONTROL.md) over low-level property/DSP commands.
+   shell, see settings.md) over low-level property/DSP commands.
 6. **Remove `script/startup.ttl` (and `shutdown.ttl`) after use.** Scripts run on
    *every* boot / power-off while they are on the card. A forgotten script will
    silently re-apply settings or keep crashing a task.
@@ -55,6 +55,21 @@ good reason and explicit user consent:
 - Shell: `sys_factory*`, `med_format`, `ftest_format_sd`, `med_rm`, `med_restore`,
   `med_break`, `sys_fwdump`, anything `CAP_*`, `Mxic_*`, `Sdram_*`, `Arbiter_*`,
   `SR_*`, `wlanrf_*`, `blerf_*`, `FE_*`/`BE_*` debug, `USB_*`, `cpu_*`.
+
+## UserData settings: extra care
+
+`UserData Set` (see settings.md) writes real settings that persist. Before writing:
+
+- Tell the user which setting changes and let them note the old value (there is
+  no read-back yet).
+- Use only tokens from `data/userdata_set_values.tsv`. For `int`/`float` items
+  the parser does no range check. Only write numbers the camera itself uses.
+- Do not touch without explicit user consent:
+  - `SetupMenuReset*`: these probably trigger a reset of whole settings groups.
+  - `SetupLanguage`: a wrong value can make the UI unreadable for the user.
+  - `SetupWlan`, `SetupBleMode`, `*Transmit*`: wireless, pairing.
+  - `CustomSettingBox*`: user modes U1–U3 (overwrites the user's saved modes).
+  - `Common*` (Tv/Av/Sv, menu cursor positions): internal state, not user settings.
 
 ## What currently is left enabled on the test camera
 

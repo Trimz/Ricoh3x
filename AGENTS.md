@@ -14,7 +14,8 @@ developer features. Before proposing any on-camera step:
 6. Tell the user before anything that writes camera settings, and say which
    slot/setting will change so they can note the old value.
 7. After a script has run once, remove it from the card.
-8. Record new findings in `docs/` (what was run, what happened, exact command).
+8. This repo is a knowledge base: record every finding in `docs/` and every
+   on-camera run in `docs/test-log.md` (what was run, exact command, outcome).
 
 The working interface for settings is `UserData Set <Item> <Value>` via
-`sendln` in `script/startup.ttl` — see `docs/IMAGE_CONTROL.md`.
+`sendln` in `script/startup.ttl`: see `docs/settings.md` and `data/userdata_set_values.tsv`.

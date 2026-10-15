@@ -1,0 +1,1037 @@
+item	kind	values	setter	handler
+CommonTv	float			0x532dc438
+CommonAv	float			0x532dc4c8
+CommonSv	float			0x532dc558
+CommonSvManual	float			0x532dc5e8
+CommonXv	float			0x532dc678
+CommonProgramShift	int			0x532dc708
+CommonSvSettingMode	enum	On=1 Off=0	0x532422a0	0x532dc790
+CommonBulbTimerTime	int			0x532dc814
+CommonExposureStep	float			0x532dc89c
+CommonSvStep	float			0x532dc92c
+CommonShootingType	enum	Normal=0 Preview=1 MwbPreset=2	0x53273544	0x532dc9bc
+CommonAeLock	enum	On=1 Off=0	0x5324b8c4	0x532dca70
+CommonStillMovie	enum	Still=0 Movie=1	0x5327b7cc	0x532dcaf4
+CommonStillMovieBackup	enum	Still=0 Movie=1	0x532422e0	0x532dcb78
+CommonLastLiveViewZoomMag	float			0x532dcbfc
+CommonTopMenuClassificationPos	int			0x532dcc8c
+CommonTopMenuDrawPosYInListClassification0	int			0x532dcd14
+CommonTopMenuFocusLineNoClassification0	int			0x532dcd9c
+CommonTopMenuDetailPosClassification0	int			0x532dce24
+CommonTopMenuDrawPosYInListClassification1	int			0x532dceac
+CommonTopMenuFocusLineNoClassification1	int			0x532dcf34
+CommonTopMenuDetailPosClassification1	int			0x532dcfbc
+CommonTopMenuDrawPosYInListClassification2	int			0x532dd044
+CommonTopMenuFocusLineNoClassification2	int			0x532dd0cc
+CommonTopMenuDetailPosClassification2	int			0x532dd154
+CommonTopMenuDrawPosYInListClassification3	int			0x532dd1dc
+CommonTopMenuFocusLineNoClassification3	int			0x532dd264
+CommonTopMenuDetailPosClassification3	int			0x532dd2ec
+CommonTopMenuDrawPosYInListClassification4	int			0x532dd374
+CommonTopMenuFocusLineNoClassification4	int			0x532dd3fc
+CommonTopMenuDetailPosClassification4	int			0x532dd484
+CommonRemoteLiveViewHeight	int			0x532dd50c
+CommonRemoteLiveViewWidth	int			0x532dd594
+CommonTempFocus	enum	AutoArea=0 Select=1 SelectContinuous=2 SelectMovieRecording=3 Pinpoint=4 Follow=5 Continuous=6 MovieAf=7 MovieRecording=8 Mf=9 Snap=10 Infinity=11 SameAsShutter=12 None=13 AutoAreaM=14 ZoneSelect=15	0x532730c0	0x532dd61c
+CommonFocusPosMm	int			0x532dd940
+CommonMacroMode	enum	On=1 Off=0	0x53273438	0x532dd9c8
+CommonActiveFocusAssist	enum	EdgeEnhance=0 EdgeExtract=1 Off=2	0x5324b95c	0x532dda4c
+CommonStillRecordFormForce	enum	Jpeg=0 Raw=1 RawPlus=2 None=3	0x532524c4	0x532ddb00
+CommonReleasePermissionAfS	enum	AllTime=0 InFocus=1 AfNotRunning=2	0x5324ba68	0x532ddbe4
+CommonReleasePermissionAfC	enum	Auto=0 AllTime=1 InFocus=2 AfNotRunning=3	0x5324bb18	0x532ddc98
+StillFocus	enum	AutoArea=0 AutoAreaM=14 ZoneSelect=15 Select=1 Pinpoint=4 Follow=5 Continuous=6 Mf=9 Snap=10 Infinity=11	0x532730f8	0x532ddd7c
+StillBackUpFocus	enum	AutoArea=0 Select=1 SelectContinuous=2 SelectMovieRecording=3 Pinpoint=4 Follow=5 Continuous=6 MovieAf=7 MovieRecording=8 Mf=9 Snap=10 Infinity=11 SameAsShutter=12 None=13 AutoAreaM=14 ZoneSelect=15	0x53242618	0x532ddf80
+StillFaceDetection	enum	On=0 OnlyAutoArea=1 Off=2	0x53273064	0x532de2a4
+StillAfAssistBeam	enum	On=1 Off=0	0x5324bbb4	0x532de358
+StillSnapDistanceCm	enum	30=30 100=100 150=150 200=200 250=250 350=350 500=500 Infinity=4294967295	0x53242680	0x532de3dc
+StillFullPressSnap	enum	On=1 Off=0	0x53242690	0x532de580
+StillFocusAssist	enum	EdgeEnhance=0 EdgeExtract=1 Off=2	0x532426a0	0x532de604
+StillAfCActionPriority	enum	Focus=1 Release=2	0x5324bc68	0x532de6b8
+StillAfRange	enum	10cmToInfinity=0 10cmTo50cm=1 50cmToInfinity=2	0x532426b0	0x532de73c
+StillMfAutoZoom	enum	On=1 Off=0	0x532426c0	0x532de7f0
+StillExposureMode	enum	P=0 Av=2 Tv=1 M=5	0x5327338c	0x532de874
+StillBulbMode	enum	Off=0 BulbTimer=1 Bulb=2 Time=3	0x532735a8	0x532de958
+StillAeMode	enum	Multi=0 Center=1 Spot=2 Highlight=3	0x5324bd70	0x532dea3c
+StillSvAuto	enum	On=1 Off=0	0x53273710	0x532deb20
+StillSvAutoManual	enum	On=1 Off=0	0x5327368c	0x532deba4
+StillSvAutoUpper	float			0x532dec28
+StillSvAutoLower	float			0x532decb8
+StillSvAutoLowerTv	float			0x532ded48
+StillFlashMode	enum	Force=0 ForceRedEye=1 SlowSync=2 SlowSyncRedEye=3	0x5324beac	0x532dedd8
+StillFlashCorrectValue	float			0x532deebc
+StillProgramLine	enum	Normal=0 Depth=1 DepthDeep=2	0x532720c4	0x532def4c
+StillNdFilter	enum	Auto=0 On=1 Off=2	0x5324c010	0x532df000
+StillAeOutsideAutoCorrect	enum	On=1 Off=0	0x5324c0c8	0x532df0b4
+StillAeLinkAfArea	enum	On=1 Off=0	0x5324c14c	0x532df138
+StillWhiteBalance	enum	Auto=0 Multi=1 Daylight=2 Shade=3 Cloudiness=4 Flu_D=5 Flu_N=6 Flu_W=7 Flu_L=8 Tungsten=9 Cte=17 Manual1=11 ColorTemp1=14 Custom1=255 Custom2=254 Custom3=253	0x532721e4	0x532df1bc
+StillWhiteBalanceAutoAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x53272378	0x532df4e0
+StillWhiteBalanceMultiAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x53272398	0x532dfa74
+StillWhiteBalanceDaylightAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x532723b8	0x532e0008
+StillWhiteBalanceShadeAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x532723d8	0x532e059c
+StillWhiteBalanceCloudinessAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x532723f8	0x532e0b30
+StillWhiteBalanceFlu_DAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x53272418	0x532e10c4
+StillWhiteBalanceFlu_NAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x53272438	0x532e1658
+StillWhiteBalanceFlu_WAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x53272458	0x532e1bec
+StillWhiteBalanceFlu_LAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x53272478	0x532e2180
+StillWhiteBalanceTungstenAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x53272498	0x532e2714
+StillWhiteBalanceCteAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x532724b8	0x532e2ca8
+StillWhiteBalanceManual1AdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x532724d8	0x532e323c
+StillWhiteBalanceColorTemp1AdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x532724f8	0x532e37d0
+StillWhiteBalanceAutoAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x5327292c	0x532e3d64
+StillWhiteBalanceMultiAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x5327294c	0x532e42f8
+StillWhiteBalanceDaylightAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x5327296c	0x532e488c
+StillWhiteBalanceShadeAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x5327298c	0x532e4e20
+StillWhiteBalanceCloudinessAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x532729ac	0x532e53b4
+StillWhiteBalanceFlu_DAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x532729cc	0x532e5948
+StillWhiteBalanceFlu_NAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x532729ec	0x532e5edc
+StillWhiteBalanceFlu_WAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272a0c	0x532e6470
+StillWhiteBalanceFlu_LAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272a2c	0x532e6a04
+StillWhiteBalanceTungstenAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272a4c	0x532e6f98
+StillWhiteBalanceCteAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272a6c	0x532e752c
+StillWhiteBalanceManual1AdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272a8c	0x532e7ac0
+StillWhiteBalanceColorTemp1AdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272aac	0x532e8054
+StillWhiteBalanceColorTemp	int			0x532e85e8
+StillFixWbAutoAdjust	enum	On=1 Off=0	0x5324c1e4	0x532e8670
+StillTungstenAwb	enum	Strong=0 Weak=1	0x5324c294	0x532e86f4
+StillActiveImageControlSet	enum	No0=0 No1=1 No2=2	0x5327b374	0x532e8778
+StillImageControlNo0	enum	Standard=11 Vivid=12 MonotoneGR=13 SoftMonotone=14 HardMonotone=15 HighContrastBW=16 NegativeFilm=22 PositiveFilm=17 BleechBypass_GR=18 Retro=19 HdrCuisine=20 CrossProcess=21	0x5327b394	0x532e882c
+StillImageControlNo1	enum	Standard=11 Vivid=12 MonotoneGR=13 SoftMonotone=14 HardMonotone=15 HighContrastBW=16 NegativeFilm=22 PositiveFilm=17 BleechBypass_GR=18 Retro=19 HdrCuisine=20 CrossProcess=21	0x5327b3b4	0x532e8a90
+StillImageControlNo2	enum	Standard=11 Vivid=12 MonotoneGR=13 SoftMonotone=14 HardMonotone=15 HighContrastBW=16 NegativeFilm=22 PositiveFilm=17 BleechBypass_GR=18 Retro=19 HdrCuisine=20 CrossProcess=21	0x5327b3d4	0x532e8cf4
+StillImageControlNo0ParamStandardSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325ba10	0x532e8f58
+StillImageControlNo0ParamVividSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325ba7c	0x532e912c
+StillImageControlNo0ParamPositiveFilmSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325bae8	0x532e9300
+StillImageControlNo0ParamBleechBypass_GRSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325bb54	0x532e94d4
+StillImageControlNo0ParamRetroSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325bbc0	0x532e96a8
+StillImageControlNo0ParamHdrCuisineSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325bc2c	0x532e987c
+StillImageControlNo0ParamStandardColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325bc98	0x532e9a50
+StillImageControlNo0ParamVividColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325bd04	0x532e9c24
+StillImageControlNo0ParamPositiveFilmColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325bd70	0x532e9df8
+StillImageControlNo0ParamBleechBypass_GRColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325bddc	0x532e9fcc
+StillImageControlNo0ParamRetroColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325be48	0x532ea1a0
+StillImageControlNo0ParamHdrCuisineColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325beb4	0x532ea374
+StillImageControlNo0ParamStandardImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325bf20	0x532ea548
+StillImageControlNo0ParamVividImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325bf8c	0x532ea71c
+StillImageControlNo0ParamMonotoneGRImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325bff8	0x532ea8f0
+StillImageControlNo0ParamSoftMonotoneImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c064	0x532eaac4
+StillImageControlNo0ParamHardMonotoneImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c0d0	0x532eac98
+StillImageControlNo0ParamHighContrastBWImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c13c	0x532eae6c
+StillImageControlNo0ParamPositiveFilmImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c1a8	0x532eb040
+StillImageControlNo0ParamBleechBypass_GRImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c214	0x532eb214
+StillImageControlNo0ParamRetroImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c280	0x532eb3e8
+StillImageControlNo0ParamStandardContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c2ec	0x532eb5bc
+StillImageControlNo0ParamVividContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c358	0x532eb790
+StillImageControlNo0ParamMonotoneGRContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c3c4	0x532eb964
+StillImageControlNo0ParamSoftMonotoneContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c430	0x532ebb38
+StillImageControlNo0ParamHardMonotoneContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c49c	0x532ebd0c
+StillImageControlNo0ParamHighContrastBWContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c508	0x532ebee0
+StillImageControlNo0ParamPositiveFilmContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c574	0x532ec0b4
+StillImageControlNo0ParamBleechBypass_GRContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c5e0	0x532ec288
+StillImageControlNo0ParamRetroContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c64c	0x532ec45c
+StillImageControlNo0ParamStandardContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c6b8	0x532ec630
+StillImageControlNo0ParamVividContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c724	0x532ec804
+StillImageControlNo0ParamMonotoneGRContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c790	0x532ec9d8
+StillImageControlNo0ParamSoftMonotoneContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c7fc	0x532ecbac
+StillImageControlNo0ParamHardMonotoneContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c868	0x532ecd80
+StillImageControlNo0ParamHighContrastBWContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c8d4	0x532ecf54
+StillImageControlNo0ParamPositiveFilmContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c940	0x532ed128
+StillImageControlNo0ParamBleechBypass_GRContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325c9ac	0x532ed2fc
+StillImageControlNo0ParamRetroContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325ca18	0x532ed4d0
+StillImageControlNo0ParamStandardContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325ca84	0x532ed6a4
+StillImageControlNo0ParamVividContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325caf0	0x532ed878
+StillImageControlNo0ParamMonotoneGRContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325cb5c	0x532eda4c
+StillImageControlNo0ParamSoftMonotoneContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325cbc8	0x532edc20
+StillImageControlNo0ParamHardMonotoneContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325cc34	0x532eddf4
+StillImageControlNo0ParamHighContrastBWContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325cca0	0x532edfc8
+StillImageControlNo0ParamPositiveFilmContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325cd0c	0x532ee19c
+StillImageControlNo0ParamBleechBypass_GRContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325cd78	0x532ee370
+StillImageControlNo0ParamRetroContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325cde4	0x532ee544
+StillImageControlNo0ParamStandardSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325ce50	0x532ee718
+StillImageControlNo0ParamVividSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325cebc	0x532ee8ec
+StillImageControlNo0ParamMonotoneGRSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325cf28	0x532eeac0
+StillImageControlNo0ParamSoftMonotoneSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325cf94	0x532eec94
+StillImageControlNo0ParamHardMonotoneSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325d000	0x532eee68
+StillImageControlNo0ParamHighContrastBWSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325d06c	0x532ef03c
+StillImageControlNo0ParamPositiveFilmSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325d0d8	0x532ef210
+StillImageControlNo0ParamBleechBypass_GRSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325d144	0x532ef3e4
+StillImageControlNo0ParamRetroSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325d1b0	0x532ef5b8
+StillImageControlNo0ParamMonotoneGRColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x5325d21c	0x532ef78c
+StillImageControlNo0ParamSoftMonotoneColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x5325d288	0x532ef8d0
+StillImageControlNo0ParamHardMonotoneColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x5325d2f4	0x532efa14
+StillImageControlNo0ParamHighContrastBWColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x5325d360	0x532efb58
+StillImageControlNo0ParamBleechBypass_GRColorToneBleechBypass	enum	Normal=1 Cool=2 Warm=3	0x5325d3cc	0x532efc9c
+StillImageControlNo0ParamRetroColorToneRetro	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325d438	0x532efd50
+StillImageControlNo0ParamHdrCuisineColorToneHdrIntense	enum	OFF=0 BW=1 Sepia=2	0x5325d4a4	0x532eff24
+StillImageControlNo0ParamFilterEffectRCustom1	int			0x532effd8
+StillImageControlNo0ParamFilterEffectGCustom1	int			0x532f0060
+StillImageControlNo0ParamFilterEffectBCustom1	int			0x532f00e8
+StillImageControlNo0ParamFilterEffectRCustom2	int			0x532f0170
+StillImageControlNo0ParamFilterEffectGCustom2	int			0x532f01f8
+StillImageControlNo0ParamFilterEffectBCustom2	int			0x532f0280
+StillImageControlNo0ParamFilterEffectRCustom3	int			0x532f0308
+StillImageControlNo0ParamFilterEffectGCustom3	int			0x532f0390
+StillImageControlNo0ParamFilterEffectBCustom3	int			0x532f0418
+StillImageControlNo0ParamFilterEffectRCustom4	int			0x532f04a0
+StillImageControlNo0ParamFilterEffectGCustom4	int			0x532f0528
+StillImageControlNo0ParamFilterEffectBCustom4	int			0x532f05b0
+StillImageControlNo0ParamStandardShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325d510	0x532f0638
+StillImageControlNo0ParamVividShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325d57c	0x532f080c
+StillImageControlNo0ParamMonotoneGRShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325d5e8	0x532f09e0
+StillImageControlNo0ParamSoftMonotoneShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325d654	0x532f0bb4
+StillImageControlNo0ParamHardMonotoneShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325d6c0	0x532f0d88
+StillImageControlNo0ParamHighContrastBWShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325d72c	0x532f0f5c
+StillImageControlNo0ParamPositiveFilmShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325d798	0x532f1130
+StillImageControlNo0ParamBleechBypass_GRShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325d804	0x532f1304
+StillImageControlNo0ParamRetroShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325d870	0x532f14d8
+StillImageControlNo0ParamStandardClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325d8dc	0x532f16ac
+StillImageControlNo0ParamVividClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325d948	0x532f1880
+StillImageControlNo0ParamMonotoneGRClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325d9b4	0x532f1a54
+StillImageControlNo0ParamHardMonotoneClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325da20	0x532f1c28
+StillImageControlNo0ParamHighContrastBWClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325da8c	0x532f1dfc
+StillImageControlNo0ParamPositiveFilmClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325daf8	0x532f1fd0
+StillImageControlNo0ParamBleechBypass_GRClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325db64	0x532f21a4
+StillImageControlNo0ParamRetroClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325dbd0	0x532f2378
+StillImageControlNo0ParamMonotoneGRParticle	enum	Off=0 Low=3 Mid=2 High=1	0x5325dc3c	0x532f254c
+StillImageControlNo0ParamSoftMonotoneParticle	enum	Off=0 Low=3 Mid=2 High=1	0x5325dca8	0x532f2630
+StillImageControlNo0ParamHardMonotoneParticle	enum	Off=0 Low=3 Mid=2 High=1	0x5325dd14	0x532f2714
+StillImageControlNo0ParamHighContrastBWParticle	enum	Off=0 Low=3 Mid=2 High=1	0x5325dd80	0x532f27f8
+StillImageControlNo0ParamHdrCuisineHdrIntense	enum	Low=1 Mid=2 High=3	0x5325ddec	0x532f28dc
+StillImageControlNo0ParamMonotoneGRFilterEffectCustom	enum	OFF=0 Custom1=1 Custom2=2 Custom3=3 Custom4=4	0x5327b3f4	0x532f2990
+StillImageControlNo0ParamSoftMonotoneFilterEffectCustom	enum	OFF=0 Custom1=1 Custom2=2 Custom3=3 Custom4=4	0x5327b414	0x532f2aa4
+StillImageControlNo0ParamHighContrastBWFilterEffectCustom	enum	OFF=0 Custom1=1 Custom2=2 Custom3=3 Custom4=4	0x5327b434	0x532f2bb8
+StillImageControlNo1ParamStandardSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325de5c	0x532f2ccc
+StillImageControlNo1ParamVividSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325decc	0x532f2ea0
+StillImageControlNo1ParamPositiveFilmSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325df3c	0x532f3074
+StillImageControlNo1ParamBleechBypass_GRSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325dfac	0x532f3248
+StillImageControlNo1ParamRetroSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e01c	0x532f341c
+StillImageControlNo1ParamHdrCuisineSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e08c	0x532f35f0
+StillImageControlNo1ParamStandardColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e0fc	0x532f37c4
+StillImageControlNo1ParamVividColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e16c	0x532f3998
+StillImageControlNo1ParamPositiveFilmColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e1dc	0x532f3b6c
+StillImageControlNo1ParamBleechBypass_GRColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e24c	0x532f3d40
+StillImageControlNo1ParamRetroColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e2bc	0x532f3f14
+StillImageControlNo1ParamHdrCuisineColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e32c	0x532f40e8
+StillImageControlNo1ParamStandardImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e39c	0x532f42bc
+StillImageControlNo1ParamVividImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e40c	0x532f4490
+StillImageControlNo1ParamMonotoneGRImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e47c	0x532f4664
+StillImageControlNo1ParamSoftMonotoneImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e4ec	0x532f4838
+StillImageControlNo1ParamHardMonotoneImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e55c	0x532f4a0c
+StillImageControlNo1ParamHighContrastBWImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e5cc	0x532f4be0
+StillImageControlNo1ParamPositiveFilmImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e63c	0x532f4db4
+StillImageControlNo1ParamBleechBypass_GRImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e6ac	0x532f4f88
+StillImageControlNo1ParamRetroImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e71c	0x532f515c
+StillImageControlNo1ParamStandardContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e78c	0x532f5330
+StillImageControlNo1ParamVividContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e7fc	0x532f5504
+StillImageControlNo1ParamMonotoneGRContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e86c	0x532f56d8
+StillImageControlNo1ParamSoftMonotoneContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e8dc	0x532f58ac
+StillImageControlNo1ParamHardMonotoneContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e94c	0x532f5a80
+StillImageControlNo1ParamHighContrastBWContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325e9bc	0x532f5c54
+StillImageControlNo1ParamPositiveFilmContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325ea2c	0x532f5e28
+StillImageControlNo1ParamBleechBypass_GRContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325ea9c	0x532f5ffc
+StillImageControlNo1ParamRetroContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325eb0c	0x532f61d0
+StillImageControlNo1ParamStandardContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325eb7c	0x532f63a4
+StillImageControlNo1ParamVividContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325ebec	0x532f6578
+StillImageControlNo1ParamMonotoneGRContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325ec5c	0x532f674c
+StillImageControlNo1ParamSoftMonotoneContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325eccc	0x532f6920
+StillImageControlNo1ParamHardMonotoneContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325ed3c	0x532f6af4
+StillImageControlNo1ParamHighContrastBWContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325edac	0x532f6cc8
+StillImageControlNo1ParamPositiveFilmContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325ee1c	0x532f6e9c
+StillImageControlNo1ParamBleechBypass_GRContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325ee8c	0x532f7070
+StillImageControlNo1ParamRetroContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325eefc	0x532f7244
+StillImageControlNo1ParamStandardContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325ef6c	0x532f7418
+StillImageControlNo1ParamVividContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325efdc	0x532f75ec
+StillImageControlNo1ParamMonotoneGRContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325f04c	0x532f77c0
+StillImageControlNo1ParamSoftMonotoneContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325f0bc	0x532f7994
+StillImageControlNo1ParamHardMonotoneContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325f12c	0x532f7b68
+StillImageControlNo1ParamHighContrastBWContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325f19c	0x532f7d3c
+StillImageControlNo1ParamPositiveFilmContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325f20c	0x532f7f10
+StillImageControlNo1ParamBleechBypass_GRContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325f27c	0x532f80e4
+StillImageControlNo1ParamRetroContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325f2ec	0x532f82b8
+StillImageControlNo1ParamStandardSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325f35c	0x532f848c
+StillImageControlNo1ParamVividSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325f3cc	0x532f8660
+StillImageControlNo1ParamMonotoneGRSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325f43c	0x532f8834
+StillImageControlNo1ParamSoftMonotoneSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325f4ac	0x532f8a08
+StillImageControlNo1ParamHardMonotoneSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325f51c	0x532f8bdc
+StillImageControlNo1ParamHighContrastBWSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325f58c	0x532f8db0
+StillImageControlNo1ParamPositiveFilmSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325f5fc	0x532f8f84
+StillImageControlNo1ParamBleechBypass_GRSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325f66c	0x532f9158
+StillImageControlNo1ParamRetroSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325f6dc	0x532f932c
+StillImageControlNo1ParamMonotoneGRColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x5325f74c	0x532f9500
+StillImageControlNo1ParamSoftMonotoneColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x5325f7bc	0x532f9644
+StillImageControlNo1ParamHardMonotoneColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x5325f82c	0x532f9788
+StillImageControlNo1ParamHighContrastBWColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x5325f89c	0x532f98cc
+StillImageControlNo1ParamBleechBypass_GRColorToneBleechBypass	enum	Normal=1 Cool=2 Warm=3	0x5325f90c	0x532f9a10
+StillImageControlNo1ParamRetroColorToneRetro	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325f97c	0x532f9ac4
+StillImageControlNo1ParamHdrCuisineColorToneHdrIntense	enum	OFF=0 BW=1 Sepia=2	0x5325f9ec	0x532f9c98
+StillImageControlNo1ParamFilterEffectRCustom1	int			0x532f9d4c
+StillImageControlNo1ParamFilterEffectGCustom1	int			0x532f9dd4
+StillImageControlNo1ParamFilterEffectBCustom1	int			0x532f9e5c
+StillImageControlNo1ParamFilterEffectRCustom2	int			0x532f9ee4
+StillImageControlNo1ParamFilterEffectGCustom2	int			0x532f9f6c
+StillImageControlNo1ParamFilterEffectBCustom2	int			0x532f9ff4
+StillImageControlNo1ParamFilterEffectRCustom3	int			0x532fa07c
+StillImageControlNo1ParamFilterEffectGCustom3	int			0x532fa104
+StillImageControlNo1ParamFilterEffectBCustom3	int			0x532fa18c
+StillImageControlNo1ParamFilterEffectRCustom4	int			0x532fa214
+StillImageControlNo1ParamFilterEffectGCustom4	int			0x532fa29c
+StillImageControlNo1ParamFilterEffectBCustom4	int			0x532fa324
+StillImageControlNo1ParamStandardShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325fa5c	0x532fa3ac
+StillImageControlNo1ParamVividShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325facc	0x532fa580
+StillImageControlNo1ParamMonotoneGRShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325fb3c	0x532fa754
+StillImageControlNo1ParamSoftMonotoneShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325fbac	0x532fa928
+StillImageControlNo1ParamHardMonotoneShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325fc1c	0x532faafc
+StillImageControlNo1ParamHighContrastBWShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325fc8c	0x532facd0
+StillImageControlNo1ParamPositiveFilmShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325fcfc	0x532faea4
+StillImageControlNo1ParamBleechBypass_GRShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325fd6c	0x532fb078
+StillImageControlNo1ParamRetroShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325fddc	0x532fb24c
+StillImageControlNo1ParamStandardClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325fe4c	0x532fb420
+StillImageControlNo1ParamVividClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325febc	0x532fb5f4
+StillImageControlNo1ParamMonotoneGRClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325ff2c	0x532fb7c8
+StillImageControlNo1ParamHardMonotoneClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5325ff9c	0x532fb99c
+StillImageControlNo1ParamHighContrastBWClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326000c	0x532fbb70
+StillImageControlNo1ParamPositiveFilmClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326007c	0x532fbd44
+StillImageControlNo1ParamBleechBypass_GRClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532600ec	0x532fbf18
+StillImageControlNo1ParamRetroClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326015c	0x532fc0ec
+StillImageControlNo1ParamMonotoneGRParticle	enum	Off=0 Low=3 Mid=2 High=1	0x532601cc	0x532fc2c0
+StillImageControlNo1ParamSoftMonotoneParticle	enum	Off=0 Low=3 Mid=2 High=1	0x5326023c	0x532fc3a4
+StillImageControlNo1ParamHardMonotoneParticle	enum	Off=0 Low=3 Mid=2 High=1	0x532602ac	0x532fc488
+StillImageControlNo1ParamHighContrastBWParticle	enum	Off=0 Low=3 Mid=2 High=1	0x5326031c	0x532fc56c
+StillImageControlNo1ParamHdrCuisineHdrIntense	enum	Low=1 Mid=2 High=3	0x5326038c	0x532fc650
+StillImageControlNo1ParamMonotoneGRFilterEffectCustom	enum	OFF=0 Custom1=1 Custom2=2 Custom3=3 Custom4=4	0x5327b454	0x532fc704
+StillImageControlNo1ParamSoftMonotoneFilterEffectCustom	enum	OFF=0 Custom1=1 Custom2=2 Custom3=3 Custom4=4	0x5327b474	0x532fc818
+StillImageControlNo1ParamHighContrastBWFilterEffectCustom	enum	OFF=0 Custom1=1 Custom2=2 Custom3=3 Custom4=4	0x5327b494	0x532fc92c
+StillImageControlNo2ParamStandardSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532603fc	0x532fca40
+StillImageControlNo2ParamVividSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326046c	0x532fcc14
+StillImageControlNo2ParamPositiveFilmSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532604dc	0x532fcde8
+StillImageControlNo2ParamBleechBypass_GRSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326054c	0x532fcfbc
+StillImageControlNo2ParamRetroSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532605bc	0x532fd190
+StillImageControlNo2ParamHdrCuisineSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326062c	0x532fd364
+StillImageControlNo2ParamStandardColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326069c	0x532fd538
+StillImageControlNo2ParamVividColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326070c	0x532fd70c
+StillImageControlNo2ParamPositiveFilmColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326077c	0x532fd8e0
+StillImageControlNo2ParamBleechBypass_GRColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532607ec	0x532fdab4
+StillImageControlNo2ParamRetroColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326085c	0x532fdc88
+StillImageControlNo2ParamHdrCuisineColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532608cc	0x532fde5c
+StillImageControlNo2ParamStandardImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326093c	0x532fe030
+StillImageControlNo2ParamVividImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532609ac	0x532fe204
+StillImageControlNo2ParamMonotoneGRImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53260a1c	0x532fe3d8
+StillImageControlNo2ParamSoftMonotoneImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53260a8c	0x532fe5ac
+StillImageControlNo2ParamHardMonotoneImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53260afc	0x532fe780
+StillImageControlNo2ParamHighContrastBWImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53260b6c	0x532fe954
+StillImageControlNo2ParamPositiveFilmImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53260bdc	0x532feb28
+StillImageControlNo2ParamBleechBypass_GRImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53260c4c	0x532fecfc
+StillImageControlNo2ParamRetroImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53260cbc	0x532feed0
+StillImageControlNo2ParamStandardContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53260d2c	0x532ff0a4
+StillImageControlNo2ParamVividContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53260d9c	0x532ff278
+StillImageControlNo2ParamMonotoneGRContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53260e0c	0x532ff44c
+StillImageControlNo2ParamSoftMonotoneContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53260e7c	0x532ff620
+StillImageControlNo2ParamHardMonotoneContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53260eec	0x532ff7f4
+StillImageControlNo2ParamHighContrastBWContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53260f5c	0x532ff9c8
+StillImageControlNo2ParamPositiveFilmContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53260fcc	0x532ffb9c
+StillImageControlNo2ParamBleechBypass_GRContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326103c	0x532ffd70
+StillImageControlNo2ParamRetroContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532610ac	0x532fff44
+StillImageControlNo2ParamStandardContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326111c	0x53300118
+StillImageControlNo2ParamVividContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326118c	0x533002ec
+StillImageControlNo2ParamMonotoneGRContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532611fc	0x533004c0
+StillImageControlNo2ParamSoftMonotoneContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326126c	0x53300694
+StillImageControlNo2ParamHardMonotoneContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532612dc	0x53300868
+StillImageControlNo2ParamHighContrastBWContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326134c	0x53300a3c
+StillImageControlNo2ParamPositiveFilmContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532613bc	0x53300c10
+StillImageControlNo2ParamBleechBypass_GRContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326142c	0x53300de4
+StillImageControlNo2ParamRetroContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326149c	0x53300fb8
+StillImageControlNo2ParamStandardContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326150c	0x5330118c
+StillImageControlNo2ParamVividContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326157c	0x53301360
+StillImageControlNo2ParamMonotoneGRContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532615ec	0x53301534
+StillImageControlNo2ParamSoftMonotoneContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326165c	0x53301708
+StillImageControlNo2ParamHardMonotoneContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532616cc	0x533018dc
+StillImageControlNo2ParamHighContrastBWContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326173c	0x53301ab0
+StillImageControlNo2ParamPositiveFilmContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532617ac	0x53301c84
+StillImageControlNo2ParamBleechBypass_GRContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326181c	0x53301e58
+StillImageControlNo2ParamRetroContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326188c	0x5330202c
+StillImageControlNo2ParamStandardSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532618fc	0x53302200
+StillImageControlNo2ParamVividSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326196c	0x533023d4
+StillImageControlNo2ParamMonotoneGRSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532619dc	0x533025a8
+StillImageControlNo2ParamSoftMonotoneSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53261a4c	0x5330277c
+StillImageControlNo2ParamHardMonotoneSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53261abc	0x53302950
+StillImageControlNo2ParamHighContrastBWSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53261b2c	0x53302b24
+StillImageControlNo2ParamPositiveFilmSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53261b9c	0x53302cf8
+StillImageControlNo2ParamBleechBypass_GRSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53261c0c	0x53302ecc
+StillImageControlNo2ParamRetroSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53261c7c	0x533030a0
+StillImageControlNo2ParamMonotoneGRColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x53261cec	0x53303274
+StillImageControlNo2ParamSoftMonotoneColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x53261d5c	0x533033b8
+StillImageControlNo2ParamHardMonotoneColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x53261dcc	0x533034fc
+StillImageControlNo2ParamHighContrastBWColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x53261e3c	0x53303640
+StillImageControlNo2ParamBleechBypass_GRColorToneBleechBypass	enum	Normal=1 Cool=2 Warm=3	0x53261eac	0x53303784
+StillImageControlNo2ParamRetroColorToneRetro	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53261f1c	0x53303838
+StillImageControlNo2ParamHdrCuisineColorToneHdrIntense	enum	OFF=0 BW=1 Sepia=2	0x53261f8c	0x53303a0c
+StillImageControlNo2ParamFilterEffectRCustom1	int			0x53303ac0
+StillImageControlNo2ParamFilterEffectGCustom1	int			0x53303b48
+StillImageControlNo2ParamFilterEffectBCustom1	int			0x53303bd0
+StillImageControlNo2ParamFilterEffectRCustom2	int			0x53303c58
+StillImageControlNo2ParamFilterEffectGCustom2	int			0x53303ce0
+StillImageControlNo2ParamFilterEffectBCustom2	int			0x53303d68
+StillImageControlNo2ParamFilterEffectRCustom3	int			0x53303df0
+StillImageControlNo2ParamFilterEffectGCustom3	int			0x53303e78
+StillImageControlNo2ParamFilterEffectBCustom3	int			0x53303f00
+StillImageControlNo2ParamFilterEffectRCustom4	int			0x53303f88
+StillImageControlNo2ParamFilterEffectGCustom4	int			0x53304010
+StillImageControlNo2ParamFilterEffectBCustom4	int			0x53304098
+StillImageControlNo2ParamStandardShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53261ffc	0x53304120
+StillImageControlNo2ParamVividShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326206c	0x533042f4
+StillImageControlNo2ParamMonotoneGRShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532620dc	0x533044c8
+StillImageControlNo2ParamSoftMonotoneShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326214c	0x5330469c
+StillImageControlNo2ParamHardMonotoneShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532621bc	0x53304870
+StillImageControlNo2ParamHighContrastBWShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326222c	0x53304a44
+StillImageControlNo2ParamPositiveFilmShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326229c	0x53304c18
+StillImageControlNo2ParamBleechBypass_GRShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326230c	0x53304dec
+StillImageControlNo2ParamRetroShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326237c	0x53304fc0
+StillImageControlNo2ParamStandardClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532623ec	0x53305194
+StillImageControlNo2ParamVividClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326245c	0x53305368
+StillImageControlNo2ParamMonotoneGRClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532624cc	0x5330553c
+StillImageControlNo2ParamHardMonotoneClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326253c	0x53305710
+StillImageControlNo2ParamHighContrastBWClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532625ac	0x533058e4
+StillImageControlNo2ParamPositiveFilmClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326261c	0x53305ab8
+StillImageControlNo2ParamBleechBypass_GRClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326268c	0x53305c8c
+StillImageControlNo2ParamRetroClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532626fc	0x53305e60
+StillImageControlNo2ParamMonotoneGRParticle	enum	Off=0 Low=3 Mid=2 High=1	0x5326276c	0x53306034
+StillImageControlNo2ParamSoftMonotoneParticle	enum	Off=0 Low=3 Mid=2 High=1	0x532627dc	0x53306118
+StillImageControlNo2ParamHardMonotoneParticle	enum	Off=0 Low=3 Mid=2 High=1	0x5326284c	0x533061fc
+StillImageControlNo2ParamHighContrastBWParticle	enum	Off=0 Low=3 Mid=2 High=1	0x532628bc	0x533062e0
+StillImageControlNo2ParamHdrCuisineHdrIntense	enum	Low=1 Mid=2 High=3	0x5326292c	0x533063c4
+StillImageControlNo2ParamMonotoneGRFilterEffectCustom	enum	OFF=0 Custom1=1 Custom2=2 Custom3=3 Custom4=4	0x5327b4b4	0x53306478
+StillImageControlNo2ParamSoftMonotoneFilterEffectCustom	enum	OFF=0 Custom1=1 Custom2=2 Custom3=3 Custom4=4	0x5327b4d4	0x5330658c
+StillImageControlNo2ParamHighContrastBWFilterEffectCustom	enum	OFF=0 Custom1=1 Custom2=2 Custom3=3 Custom4=4	0x5327b4f4	0x533066a0
+StillLensShadingCorrection	enum	On=1 Off=0	0x53251fc0	0x533067b4
+StillDriveModeFocusPos	enum	Drive=0 SelfTimer=1	0x532427fc	0x53306838
+StillDriveMode	enum	Single=0 Continuous=1 Bracket=2 MultiExposure=3 Interval=4 IntervalMultiExposure=5	0x5327b744	0x533068bc
+StillBracketKind	enum	Exposure=0	0x53252090	0x53306a00
+StillBracketPriority	enum	ZeroMinus=0 Minus=1 Plus=2 ZeroPlus=3	0x53252128	0x53306a50
+StillExposureBracketStep	float			0x53306b34
+StillMultiExposureCompositeType	enum	Average=1 Additive=0 Bright=2	0x53252284	0x53306bc4
+StillMultiExposureSaveProcess	enum	Original=1 Composite=2 OriginalComposite=3 Off=0	0x53262990	0x53306c78
+StillSelfTimer	enum	10Sec=3 2Sec=1 Off=0	0x53273278	0x53306d5c
+StillIntervalShootingStartTrigger	enum	Off=0 Clock=5	0x532732c0	0x53306e10
+StillSelfTImerClockTimeSec	int			0x53306e94
+StillIntervalShootingStartClockTimeSec	int			0x53306f1c
+StillIntervalShootingIntervalSec	int			0x53306fa4
+StillIntervalShootingCount	int			0x5330702c
+StillIntervalMultiExposureStartTrigger	enum	Off=0 Clock=5	0x532732e0	0x533070b4
+StillIntervalMultiExposureTotalTimeSec	int			0x53307138
+StillIntervalMultiExposureStartClockTimeSec	int			0x533071c0
+StillIntervalMultiExposureSaveProcess	enum	Original=1 Composite=2 Off=0	0x532629f4	0x53307248
+StillLowPassSelector	enum	Strong=0 Weak=1 Off=2	0x532523c8	0x533072fc
+StillStillRecordForm	enum	Jpeg=0 Raw=1 RawPlus=2	0x53252454	0x533073b0
+StillAspectRatio	enum	3_2=0 1_1=3	0x532525a4	0x53307464
+StillCropMag	float			0x533074e8
+StillJpegSize	enum	L=0 M=1 S=2 XS=3	0x53252768	0x53307578
+StillColorSpace	enum	sRGB=0 AdobeRGB=1	0x53252804	0x5330765c
+StillHighlightCorrect	enum	Auto=0 On=1 Off=2	0x532528b0	0x533076e0
+StillShadowCorrect	enum	Auto=0 Low=1 Mid=2 High=3 Off=4	0x5325295c	0x53307794
+StillLongTvNR	enum	Auto=0 On=1 Off=2	0x53252a08	0x533078a8
+StillHighIsoNR	enum	Auto=0 Low=1 Mid=2 High=3 Custom=4 Off=5	0x53252aa0	0x5330795c
+StillHighIsoNRCustomIso50	enum	Off=3 Low=0 Mid=1 High=2	0x53252b38	0x53307aa0
+StillHighIsoNRCustomIso100	enum	Off=3 Low=0 Mid=1 High=2	0x53252bd0	0x53307b84
+StillHighIsoNRCustomIso200	enum	Off=3 Low=0 Mid=1 High=2	0x53252c68	0x53307c68
+StillHighIsoNRCustomIso400	enum	Off=3 Low=0 Mid=1 High=2	0x53252d00	0x53307d4c
+StillHighIsoNRCustomIso800	enum	Off=3 Low=0 Mid=1 High=2	0x53252d98	0x53307e30
+StillHighIsoNRCustomIso1600	enum	Off=3 Low=0 Mid=1 High=2	0x53252e30	0x53307f14
+StillHighIsoNRCustomIso3200	enum	Off=3 Low=0 Mid=1 High=2	0x53252ec8	0x53307ff8
+StillHighIsoNRCustomIso6400	enum	Off=3 Low=0 Mid=1 High=2	0x53252f60	0x533080dc
+StillHighIsoNRCustomIso12800	enum	Off=3 Low=0 Mid=1 High=2	0x53252ff8	0x533081c0
+StillHighIsoNRCustomIso25600	enum	Off=3 Low=0 Mid=1 High=2	0x53253090	0x533082a4
+StillHighIsoNRCustomIso51200	enum	Off=3 Low=0 Mid=1 High=2	0x53253128	0x53308388
+StillHighIsoNRCustomIso102400	enum	Off=3 Low=0 Mid=1 High=2	0x532531c0	0x5330846c
+StillHighIsoNRCustomIso204800	enum	Off=3 Low=0 Mid=1 High=2	0x53253258	0x53308550
+StillHighIsoNRCustomIso409600	enum	Off=3 Low=0 Mid=1 High=2	0x532532f0	0x53308634
+StillHighIsoNRCustomIso819200	enum	Off=3 Low=0 Mid=1 High=2	0x53253388	0x53308718
+StillShakeReduction	enum	On=1 Off=0	0x532731d4	0x533087fc
+StillSrAutoOff	enum	On=0 Off=1	0x5327321c	0x53308880
+StillAutoHorizon	enum	On=1 Off=0	0x5325340c	0x53308904
+MovieFocus	enum	MovieAf=7 Mf=9 Snap=10 Infinity=11	0x53273140	0x53308988
+MovieBackUpFocus	enum	AutoArea=0 Select=1 SelectContinuous=2 SelectMovieRecording=3 Pinpoint=4 Follow=5 Continuous=6 MovieAf=7 MovieRecording=8 Mf=9 Snap=10 Infinity=11 SameAsShutter=12 None=13 AutoAreaM=14 ZoneSelect=15	0x53242998	0x53308a6c
+MovieAfAssistBeam	enum	On=1 Off=0	0x53253490	0x53308d90
+MovieSnapDistanceCm	enum	30=30 100=100 150=150 200=200 250=250 350=350 500=500 Infinity=4294967295	0x532429a8	0x53308e14
+MovieFocusAssist	enum	EdgeEnhance=0 EdgeExtract=1 Off=2	0x532429cc	0x53308fb8
+MovieAfCActionPriority	enum	Focus=1 Release=2	0x53253560	0x5330906c
+MovieAfRange	enum	10cmToInfinity=0 10cmTo50cm=1 50cmToInfinity=2	0x532429f0	0x533090f0
+MovieMfAutoZoom	enum	On=1 Off=0	0x53242a14	0x533091a4
+MovieAeMode	enum	Multi=0 Center=1 Spot=2 Highlight=3	0x53253628	0x53309228
+MovieSvAuto	enum	On=1 Off=0	0x532536dc	0x5330930c
+MovieSvAutoUpper	float			0x53309390
+MovieSvAutoLower	float			0x53309420
+MovieSvAutoLowerTv	float			0x533094b0
+MovieNdFilter	enum	On=1 Off=2	0x53253784	0x53309540
+MovieAeLinkAfArea	enum	On=1 Off=0	0x53253854	0x533095c4
+MovieWhiteBalance	enum	Auto=0 Daylight=2 Shade=3 Cloudiness=4 Flu_D=5 Flu_N=6 Flu_W=7 Flu_L=8 Tungsten=9 Cte=17 Manual1=11 ColorTemp1=14 Custom1=255 Custom2=254 Custom3=253	0x53272204	0x53309648
+MovieWhiteBalanceAutoAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x53272518	0x5330993c
+MovieWhiteBalanceMultiAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x53272550	0x53309ed0
+MovieWhiteBalanceDaylightAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x53272588	0x5330a464
+MovieWhiteBalanceShadeAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x532725c0	0x5330a9f8
+MovieWhiteBalanceCloudinessAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x532725f8	0x5330af8c
+MovieWhiteBalanceFlu_DAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x53272630	0x5330b520
+MovieWhiteBalanceFlu_NAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x53272668	0x5330bab4
+MovieWhiteBalanceFlu_WAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x532726a0	0x5330c048
+MovieWhiteBalanceFlu_LAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x532726d8	0x5330c5dc
+MovieWhiteBalanceTungstenAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x53272710	0x5330cb70
+MovieWhiteBalanceCteAdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x53272748	0x5330d104
+MovieWhiteBalanceManual1AdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x53272780	0x5330d698
+MovieWhiteBalanceColorTemp1AdjustGM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x532727b8	0x5330dc2c
+MovieWhiteBalanceAutoAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272acc	0x5330e1c0
+MovieWhiteBalanceMultiAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272b04	0x5330e754
+MovieWhiteBalanceDaylightAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272b3c	0x5330ece8
+MovieWhiteBalanceShadeAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272b74	0x5330f27c
+MovieWhiteBalanceCloudinessAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272bac	0x5330f810
+MovieWhiteBalanceFlu_DAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272be4	0x5330fda4
+MovieWhiteBalanceFlu_NAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272c1c	0x53310338
+MovieWhiteBalanceFlu_WAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272c54	0x533108cc
+MovieWhiteBalanceFlu_LAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272c8c	0x53310e60
+MovieWhiteBalanceTungstenAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272cc4	0x533113f4
+MovieWhiteBalanceCteAdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272cfc	0x53311988
+MovieWhiteBalanceManual1AdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272d34	0x53311f1c
+MovieWhiteBalanceColorTemp1AdjustBA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272d6c	0x533124b0
+MovieWhiteBalanceColorTemp	int			0x53312a44
+MovieFixWbAutoAdjust	enum	On=1 Off=0	0x53253908	0x53312acc
+MovieTungstenAwb	enum	Strong=0 Weak=1	0x532539d4	0x53312b50
+MovieActiveImageControlSet	enum	No0=0 No1=1 No2=2	0x5327b514	0x53312bd4
+MovieImageControlNo0	enum	Standard=11 Vivid=12 MonotoneGR=13 HardMonotone=15 HighContrastBW=16 NegativeFilm=22 PositiveFilm=17 BleechBypass_GR=18 Retro=19 CrossProcess=21	0x5327b54c	0x53312c88
+MovieImageControlNo1	enum	Standard=11 Vivid=12 MonotoneGR=13 HardMonotone=15 HighContrastBW=16 NegativeFilm=22 PositiveFilm=17 BleechBypass_GR=18 Retro=19 CrossProcess=21	0x5327b584	0x53312e8c
+MovieImageControlNo2	enum	Standard=11 Vivid=12 MonotoneGR=13 HardMonotone=15 HighContrastBW=16 NegativeFilm=22 PositiveFilm=17 BleechBypass_GR=18 Retro=19 CrossProcess=21	0x5327b5bc	0x53313090
+MovieImageControlNo0ParamStandardSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53262a60	0x53313294
+MovieImageControlNo0ParamVividSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53262ae4	0x53313468
+MovieImageControlNo0ParamPositiveFilmSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53262b68	0x5331363c
+MovieImageControlNo0ParamBleechBypass_GRSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53262bec	0x53313810
+MovieImageControlNo0ParamRetroSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53262c70	0x533139e4
+MovieImageControlNo0ParamStandardColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53262cf4	0x53313bb8
+MovieImageControlNo0ParamVividColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53262d78	0x53313d8c
+MovieImageControlNo0ParamPositiveFilmColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53262dfc	0x53313f60
+MovieImageControlNo0ParamBleechBypass_GRColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53262e80	0x53314134
+MovieImageControlNo0ParamRetroColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53262f04	0x53314308
+MovieImageControlNo0ParamStandardImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53262f88	0x533144dc
+MovieImageControlNo0ParamVividImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326300c	0x533146b0
+MovieImageControlNo0ParamMonotoneGRImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53263090	0x53314884
+MovieImageControlNo0ParamHardMonotoneImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53263114	0x53314a58
+MovieImageControlNo0ParamHighContrastBWImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53263198	0x53314c2c
+MovieImageControlNo0ParamPositiveFilmImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326321c	0x53314e00
+MovieImageControlNo0ParamBleechBypass_GRImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532632a0	0x53314fd4
+MovieImageControlNo0ParamRetroImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53263324	0x533151a8
+MovieImageControlNo0ParamStandardContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532633a8	0x5331537c
+MovieImageControlNo0ParamVividContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326342c	0x53315550
+MovieImageControlNo0ParamMonotoneGRContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532634b0	0x53315724
+MovieImageControlNo0ParamHardMonotoneContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53263534	0x533158f8
+MovieImageControlNo0ParamHighContrastBWContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532635b8	0x53315acc
+MovieImageControlNo0ParamPositiveFilmContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326363c	0x53315ca0
+MovieImageControlNo0ParamBleechBypass_GRContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532636c0	0x53315e74
+MovieImageControlNo0ParamRetroContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53263744	0x53316048
+MovieImageControlNo0ParamStandardContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532637c8	0x5331621c
+MovieImageControlNo0ParamVividContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326384c	0x533163f0
+MovieImageControlNo0ParamMonotoneGRContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532638d0	0x533165c4
+MovieImageControlNo0ParamHardMonotoneContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53263954	0x53316798
+MovieImageControlNo0ParamHighContrastBWContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532639d8	0x5331696c
+MovieImageControlNo0ParamPositiveFilmContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53263a5c	0x53316b40
+MovieImageControlNo0ParamBleechBypass_GRContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53263ae0	0x53316d14
+MovieImageControlNo0ParamRetroContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53263b64	0x53316ee8
+MovieImageControlNo0ParamStandardContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53263be8	0x533170bc
+MovieImageControlNo0ParamVividContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53263c6c	0x53317290
+MovieImageControlNo0ParamMonotoneGRContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53263cf0	0x53317464
+MovieImageControlNo0ParamHardMonotoneContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53263d74	0x53317638
+MovieImageControlNo0ParamHighContrastBWContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53263df8	0x5331780c
+MovieImageControlNo0ParamPositiveFilmContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53263e7c	0x533179e0
+MovieImageControlNo0ParamBleechBypass_GRContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53263f00	0x53317bb4
+MovieImageControlNo0ParamRetroContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53263f84	0x53317d88
+MovieImageControlNo0ParamStandardSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264008	0x53317f5c
+MovieImageControlNo0ParamVividSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326408c	0x53318130
+MovieImageControlNo0ParamMonotoneGRSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264110	0x53318304
+MovieImageControlNo0ParamHardMonotoneSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264194	0x533184d8
+MovieImageControlNo0ParamHighContrastBWSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264218	0x533186ac
+MovieImageControlNo0ParamPositiveFilmSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326429c	0x53318880
+MovieImageControlNo0ParamBleechBypass_GRSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264320	0x53318a54
+MovieImageControlNo0ParamRetroSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532643a4	0x53318c28
+MovieImageControlNo0ParamMonotoneGRColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x53264428	0x53318dfc
+MovieImageControlNo0ParamHardMonotoneColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x532644ac	0x53318f40
+MovieImageControlNo0ParamHighContrastBWColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x53264530	0x53319084
+MovieImageControlNo0ParamBleechBypass_GRColorToneBleechBypass	enum	Normal=1 Cool=2 Warm=3	0x532645b4	0x533191c8
+MovieImageControlNo0ParamRetroColorToneRetro	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264638	0x5331927c
+MovieImageControlNo0ParamFilterEffectRCustom1	int			0x53319450
+MovieImageControlNo0ParamFilterEffectGCustom1	int			0x533194d8
+MovieImageControlNo0ParamFilterEffectBCustom1	int			0x53319560
+MovieImageControlNo0ParamFilterEffectRCustom2	int			0x533195e8
+MovieImageControlNo0ParamFilterEffectGCustom2	int			0x53319670
+MovieImageControlNo0ParamFilterEffectBCustom2	int			0x533196f8
+MovieImageControlNo0ParamFilterEffectRCustom3	int			0x53319780
+MovieImageControlNo0ParamFilterEffectGCustom3	int			0x53319808
+MovieImageControlNo0ParamFilterEffectBCustom3	int			0x53319890
+MovieImageControlNo0ParamFilterEffectRCustom4	int			0x53319918
+MovieImageControlNo0ParamFilterEffectGCustom4	int			0x533199a0
+MovieImageControlNo0ParamFilterEffectBCustom4	int			0x53319a28
+MovieImageControlNo0ParamStandardShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532646bc	0x53319ab0
+MovieImageControlNo0ParamVividShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264740	0x53319c84
+MovieImageControlNo0ParamMonotoneGRShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532647c4	0x53319e58
+MovieImageControlNo0ParamHardMonotoneShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264848	0x5331a02c
+MovieImageControlNo0ParamHighContrastBWShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532648cc	0x5331a200
+MovieImageControlNo0ParamPositiveFilmShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264950	0x5331a3d4
+MovieImageControlNo0ParamBleechBypass_GRShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532649d4	0x5331a5a8
+MovieImageControlNo0ParamRetroShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264a58	0x5331a77c
+MovieImageControlNo0ParamMonotoneGRFilterEffectCustom	enum	OFF=0 Custom1=1 Custom2=2 Custom3=3 Custom4=4	0x5327b5f4	0x5331a950
+MovieImageControlNo0ParamHighContrastBWFilterEffectCustom	enum	OFF=0 Custom1=1 Custom2=2 Custom3=3 Custom4=4	0x5327b62c	0x5331aa64
+MovieImageControlNo1ParamStandardSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264ae0	0x5331ab78
+MovieImageControlNo1ParamVividSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264b68	0x5331ad4c
+MovieImageControlNo1ParamPositiveFilmSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264bf0	0x5331af20
+MovieImageControlNo1ParamBleechBypass_GRSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264c78	0x5331b0f4
+MovieImageControlNo1ParamRetroSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264d00	0x5331b2c8
+MovieImageControlNo1ParamStandardColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264d88	0x5331b49c
+MovieImageControlNo1ParamVividColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264e10	0x5331b670
+MovieImageControlNo1ParamPositiveFilmColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264e98	0x5331b844
+MovieImageControlNo1ParamBleechBypass_GRColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264f20	0x5331ba18
+MovieImageControlNo1ParamRetroColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53264fa8	0x5331bbec
+MovieImageControlNo1ParamStandardImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265030	0x5331bdc0
+MovieImageControlNo1ParamVividImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532650b8	0x5331bf94
+MovieImageControlNo1ParamMonotoneGRImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265140	0x5331c168
+MovieImageControlNo1ParamHardMonotoneImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532651c8	0x5331c33c
+MovieImageControlNo1ParamHighContrastBWImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265250	0x5331c510
+MovieImageControlNo1ParamPositiveFilmImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532652d8	0x5331c6e4
+MovieImageControlNo1ParamBleechBypass_GRImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265360	0x5331c8b8
+MovieImageControlNo1ParamRetroImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532653e8	0x5331ca8c
+MovieImageControlNo1ParamStandardContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265470	0x5331cc60
+MovieImageControlNo1ParamVividContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532654f8	0x5331ce34
+MovieImageControlNo1ParamMonotoneGRContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265580	0x5331d008
+MovieImageControlNo1ParamHardMonotoneContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265608	0x5331d1dc
+MovieImageControlNo1ParamHighContrastBWContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265690	0x5331d3b0
+MovieImageControlNo1ParamPositiveFilmContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265718	0x5331d584
+MovieImageControlNo1ParamBleechBypass_GRContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532657a0	0x5331d758
+MovieImageControlNo1ParamRetroContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265828	0x5331d92c
+MovieImageControlNo1ParamStandardContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532658b0	0x5331db00
+MovieImageControlNo1ParamVividContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265938	0x5331dcd4
+MovieImageControlNo1ParamMonotoneGRContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532659c0	0x5331dea8
+MovieImageControlNo1ParamHardMonotoneContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265a48	0x5331e07c
+MovieImageControlNo1ParamHighContrastBWContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265ad0	0x5331e250
+MovieImageControlNo1ParamPositiveFilmContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265b58	0x5331e424
+MovieImageControlNo1ParamBleechBypass_GRContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265be0	0x5331e5f8
+MovieImageControlNo1ParamRetroContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265c68	0x5331e7cc
+MovieImageControlNo1ParamStandardContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265cf0	0x5331e9a0
+MovieImageControlNo1ParamVividContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265d78	0x5331eb74
+MovieImageControlNo1ParamMonotoneGRContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265e00	0x5331ed48
+MovieImageControlNo1ParamHardMonotoneContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265e88	0x5331ef1c
+MovieImageControlNo1ParamHighContrastBWContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265f10	0x5331f0f0
+MovieImageControlNo1ParamPositiveFilmContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53265f98	0x5331f2c4
+MovieImageControlNo1ParamBleechBypass_GRContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53266020	0x5331f498
+MovieImageControlNo1ParamRetroContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532660a8	0x5331f66c
+MovieImageControlNo1ParamStandardSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53266130	0x5331f840
+MovieImageControlNo1ParamVividSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532661b8	0x5331fa14
+MovieImageControlNo1ParamMonotoneGRSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53266240	0x5331fbe8
+MovieImageControlNo1ParamHardMonotoneSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532662c8	0x5331fdbc
+MovieImageControlNo1ParamHighContrastBWSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53266350	0x5331ff90
+MovieImageControlNo1ParamPositiveFilmSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532663d8	0x53320164
+MovieImageControlNo1ParamBleechBypass_GRSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53266460	0x53320338
+MovieImageControlNo1ParamRetroSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532664e8	0x5332050c
+MovieImageControlNo1ParamMonotoneGRColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x53266570	0x533206e0
+MovieImageControlNo1ParamHardMonotoneColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x532665f8	0x53320824
+MovieImageControlNo1ParamHighContrastBWColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x53266680	0x53320968
+MovieImageControlNo1ParamBleechBypass_GRColorToneBleechBypass	enum	Normal=1 Cool=2 Warm=3	0x53266708	0x53320aac
+MovieImageControlNo1ParamRetroColorToneRetro	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53266790	0x53320b60
+MovieImageControlNo1ParamFilterEffectRCustom1	int			0x53320d34
+MovieImageControlNo1ParamFilterEffectGCustom1	int			0x53320dbc
+MovieImageControlNo1ParamFilterEffectBCustom1	int			0x53320e44
+MovieImageControlNo1ParamFilterEffectRCustom2	int			0x53320ecc
+MovieImageControlNo1ParamFilterEffectGCustom2	int			0x53320f54
+MovieImageControlNo1ParamFilterEffectBCustom2	int			0x53320fdc
+MovieImageControlNo1ParamFilterEffectRCustom3	int			0x53321064
+MovieImageControlNo1ParamFilterEffectGCustom3	int			0x533210ec
+MovieImageControlNo1ParamFilterEffectBCustom3	int			0x53321174
+MovieImageControlNo1ParamFilterEffectRCustom4	int			0x533211fc
+MovieImageControlNo1ParamFilterEffectGCustom4	int			0x53321284
+MovieImageControlNo1ParamFilterEffectBCustom4	int			0x5332130c
+MovieImageControlNo1ParamStandardShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53266818	0x53321394
+MovieImageControlNo1ParamVividShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532668a0	0x53321568
+MovieImageControlNo1ParamMonotoneGRShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53266928	0x5332173c
+MovieImageControlNo1ParamHardMonotoneShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532669b0	0x53321910
+MovieImageControlNo1ParamHighContrastBWShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53266a38	0x53321ae4
+MovieImageControlNo1ParamPositiveFilmShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53266ac0	0x53321cb8
+MovieImageControlNo1ParamBleechBypass_GRShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53266b48	0x53321e8c
+MovieImageControlNo1ParamRetroShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53266bd0	0x53322060
+MovieImageControlNo1ParamMonotoneGRFilterEffectCustom	enum	OFF=0 Custom1=1 Custom2=2 Custom3=3 Custom4=4	0x5327b664	0x53322234
+MovieImageControlNo1ParamHighContrastBWFilterEffectCustom	enum	OFF=0 Custom1=1 Custom2=2 Custom3=3 Custom4=4	0x5327b69c	0x53322348
+MovieImageControlNo2ParamStandardSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53266c58	0x5332245c
+MovieImageControlNo2ParamVividSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53266ce0	0x53322630
+MovieImageControlNo2ParamPositiveFilmSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53266d68	0x53322804
+MovieImageControlNo2ParamBleechBypass_GRSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53266df0	0x533229d8
+MovieImageControlNo2ParamRetroSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53266e78	0x53322bac
+MovieImageControlNo2ParamStandardColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53266f00	0x53322d80
+MovieImageControlNo2ParamVividColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53266f88	0x53322f54
+MovieImageControlNo2ParamPositiveFilmColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267010	0x53323128
+MovieImageControlNo2ParamBleechBypass_GRColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267098	0x533232fc
+MovieImageControlNo2ParamRetroColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267120	0x533234d0
+MovieImageControlNo2ParamStandardImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532671a8	0x533236a4
+MovieImageControlNo2ParamVividImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267230	0x53323878
+MovieImageControlNo2ParamMonotoneGRImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532672b8	0x53323a4c
+MovieImageControlNo2ParamHardMonotoneImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267340	0x53323c20
+MovieImageControlNo2ParamHighContrastBWImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532673c8	0x53323df4
+MovieImageControlNo2ParamPositiveFilmImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267450	0x53323fc8
+MovieImageControlNo2ParamBleechBypass_GRImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532674d8	0x5332419c
+MovieImageControlNo2ParamRetroImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267560	0x53324370
+MovieImageControlNo2ParamStandardContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532675e8	0x53324544
+MovieImageControlNo2ParamVividContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267670	0x53324718
+MovieImageControlNo2ParamMonotoneGRContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532676f8	0x533248ec
+MovieImageControlNo2ParamHardMonotoneContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267780	0x53324ac0
+MovieImageControlNo2ParamHighContrastBWContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267808	0x53324c94
+MovieImageControlNo2ParamPositiveFilmContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267890	0x53324e68
+MovieImageControlNo2ParamBleechBypass_GRContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267918	0x5332503c
+MovieImageControlNo2ParamRetroContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532679a0	0x53325210
+MovieImageControlNo2ParamStandardContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267a28	0x533253e4
+MovieImageControlNo2ParamVividContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267ab0	0x533255b8
+MovieImageControlNo2ParamMonotoneGRContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267b38	0x5332578c
+MovieImageControlNo2ParamHardMonotoneContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267bc0	0x53325960
+MovieImageControlNo2ParamHighContrastBWContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267c48	0x53325b34
+MovieImageControlNo2ParamPositiveFilmContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267cd0	0x53325d08
+MovieImageControlNo2ParamBleechBypass_GRContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267d58	0x53325edc
+MovieImageControlNo2ParamRetroContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267de0	0x533260b0
+MovieImageControlNo2ParamStandardContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267e68	0x53326284
+MovieImageControlNo2ParamVividContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267ef0	0x53326458
+MovieImageControlNo2ParamMonotoneGRContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53267f78	0x5332662c
+MovieImageControlNo2ParamHardMonotoneContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268000	0x53326800
+MovieImageControlNo2ParamHighContrastBWContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268088	0x533269d4
+MovieImageControlNo2ParamPositiveFilmContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268110	0x53326ba8
+MovieImageControlNo2ParamBleechBypass_GRContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268198	0x53326d7c
+MovieImageControlNo2ParamRetroContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268220	0x53326f50
+MovieImageControlNo2ParamStandardSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532682a8	0x53327124
+MovieImageControlNo2ParamVividSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268330	0x533272f8
+MovieImageControlNo2ParamMonotoneGRSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532683b8	0x533274cc
+MovieImageControlNo2ParamHardMonotoneSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268440	0x533276a0
+MovieImageControlNo2ParamHighContrastBWSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532684c8	0x53327874
+MovieImageControlNo2ParamPositiveFilmSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268550	0x53327a48
+MovieImageControlNo2ParamBleechBypass_GRSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532685d8	0x53327c1c
+MovieImageControlNo2ParamRetroSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268660	0x53327df0
+MovieImageControlNo2ParamMonotoneGRColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x532686e8	0x53327fc4
+MovieImageControlNo2ParamHardMonotoneColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x53268770	0x53328108
+MovieImageControlNo2ParamHighContrastBWColorToneMonotone	enum	OFF=0 Sepia=1 Red=2 Green=3 Blue=4 Purple=5	0x532687f8	0x5332824c
+MovieImageControlNo2ParamBleechBypass_GRColorToneBleechBypass	enum	Normal=1 Cool=2 Warm=3	0x53268880	0x53328390
+MovieImageControlNo2ParamRetroColorToneRetro	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268908	0x53328444
+MovieImageControlNo2ParamFilterEffectRCustom1	int			0x53328618
+MovieImageControlNo2ParamFilterEffectGCustom1	int			0x533286a0
+MovieImageControlNo2ParamFilterEffectBCustom1	int			0x53328728
+MovieImageControlNo2ParamFilterEffectRCustom2	int			0x533287b0
+MovieImageControlNo2ParamFilterEffectGCustom2	int			0x53328838
+MovieImageControlNo2ParamFilterEffectBCustom2	int			0x533288c0
+MovieImageControlNo2ParamFilterEffectRCustom3	int			0x53328948
+MovieImageControlNo2ParamFilterEffectGCustom3	int			0x533289d0
+MovieImageControlNo2ParamFilterEffectBCustom3	int			0x53328a58
+MovieImageControlNo2ParamFilterEffectRCustom4	int			0x53328ae0
+MovieImageControlNo2ParamFilterEffectGCustom4	int			0x53328b68
+MovieImageControlNo2ParamFilterEffectBCustom4	int			0x53328bf0
+MovieImageControlNo2ParamStandardShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268990	0x53328c78
+MovieImageControlNo2ParamVividShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268a18	0x53328e4c
+MovieImageControlNo2ParamMonotoneGRShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268aa0	0x53329020
+MovieImageControlNo2ParamHardMonotoneShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268b28	0x533291f4
+MovieImageControlNo2ParamHighContrastBWShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268bb0	0x533293c8
+MovieImageControlNo2ParamPositiveFilmShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268c38	0x5332959c
+MovieImageControlNo2ParamBleechBypass_GRShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268cc0	0x53329770
+MovieImageControlNo2ParamRetroShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268d48	0x53329944
+MovieImageControlNo2ParamMonotoneGRFilterEffectCustom	enum	OFF=0 Custom1=1 Custom2=2 Custom3=3 Custom4=4	0x5327b6d4	0x53329b18
+MovieImageControlNo2ParamHighContrastBWFilterEffectCustom	enum	OFF=0 Custom1=1 Custom2=2 Custom3=3 Custom4=4	0x5327b70c	0x53329c2c
+MovieLensShadingCorrection	enum	On=1 Off=0	0x53257e74	0x53329d40
+MovieMovieFrameRate	enum	60P=0 30P=1 24P=2	0x53257f3c	0x53329dc4
+MovieRecordVolume	enum	Auto=21 0=0	0x53257fcc	0x53329e78
+MovieAspectRatio	enum	16_9=2	0x53258044	0x53329efc
+MovieCropMag	float			0x53329f4c
+MovieColorSpace	enum	sRGB=0	0x532581b8	0x53329fdc
+MovieHighlightCorrect	enum	Auto=0 Off=2	0x53258260	0x5332a02c
+MovieShadowCorrect	enum	Auto=0 Low=1 Mid=2 High=3 Off=4	0x53258328	0x5332a0b0
+MovieMovieShakeReduction	enum	On=1 Off=0	0x532583dc	0x5332a1c4
+PlayPlaybackStyle	enum	Single=0 Multi=1 Group=2	0x53242c4c	0x5332a248
+PlayPlaybackSingleStyle	enum	Standard=0 Detail=1 NoInformation=2	0x53242c70	0x5332a2fc
+PlayPlaybackDetailPage	int			0x5332a3b0
+PlayPlaybackMultiStyle	enum	Matrix5x4=0 Matrix8x6=1	0x53242cb8	0x5332a438
+PlayPlaybackZoomStyle	enum	Standard=0 NoInformation=1	0x53242cdc	0x5332a4bc
+PlayPlaybackEditZoomStyle	enum	Standard=0 NoInformation=1	0x53242d00	0x5332a540
+PlayPlaybackMovieStyle	enum	Standard=0 NoInformation=1	0x53242d24	0x5332a5c4
+PlayRawDevelopmentJpegSize	enum	L=0 M=1 S=2 XS=3	0x53242d48	0x5332a648
+PlayResizeJpegSize	enum	L=0 M=1 S=2 XS=3	0x53242d6c	0x5332a72c
+PlayAutoImageRotation	enum	On=0 Off=1	0x53242d90	0x5332a810
+PlayPlaybackOrder	enum	FileNo=0 Date=1	0x53242db4	0x5332a894
+PlayPlaybackFunctionLastSelectItem	enum	Delete=0 Protect=1 Rotate=2 Copy=3 Transfer=4 RawDevelopment=5 Resize=6 Trimming=7 LevelAdjust=8 WhiteBalanceAdjust=9 MoireCorrection=10 BaseMake=11 EditMovie=12	0x53242dd8	0x5332a918
+PlayMoviePlaybackVolume	enum	Lv20=20 Lv19=19 Lv18=18 Lv17=17 Lv16=16 Lv15=15 Lv14=14 Lv13=13 Lv12=12 Lv11=11 Lv10=10 Lv9=9 Lv8=8 Lv7=7 Lv6=6 Lv5=5 Lv4=4 Lv3=3 Lv2=2 Lv1=1 Lv0=0	0x53242dfc	0x5332abac
+PlayEditZoomMag	float			0x5332afc0
+PlayJpegTransmitReserve	enum	On=1 Off=0	0x53242e4c	0x5332b050
+PlayRawTransmitReserve	enum	On=1 Off=0	0x53242e70	0x5332b0d4
+PlayMovieTransmitReserve	enum	On=1 Off=0	0x53242e94	0x5332b158
+CustomSettingBox1	enum	No1=1 No2=2 No3=3 No4=4 No5=5 No6=6	0x53242eb8	0x5332b1dc
+CustomSettingBox2	enum	No1=1 No2=2 No3=3 No4=4 No5=5 No6=6	0x53242f0c	0x5332b320
+CustomSettingBox3	enum	No1=1 No2=2 No3=3 No4=4 No5=5 No6=6	0x53242f60	0x5332b464
+CustomSettingBoxName1	enum	On=1 Off=0	0x53242fb4	0x5332b5a8
+CustomSettingBoxName2	enum	On=1 Off=0	0x53242fb4	0x5332b610
+CustomSettingBoxName3	enum	On=1 Off=0	0x53242fb4	0x5332b678
+CustomSettingBoxName4	enum	On=1 Off=0	0x53242fb4	0x5332b6e0
+CustomSettingBoxName5	enum	On=1 Off=0	0x53242fb4	0x5332b748
+CustomSettingBoxName6	enum	On=1 Off=0	0x53242fb4	0x5332b7b0
+CustomSettingBoxRegist1	enum	On=1 Off=0	0x53242fb4	0x5332b818
+CustomSettingBoxRegist2	enum	On=1 Off=0	0x53242fd8	0x5332b89c
+CustomSettingBoxRegist3	enum	On=1 Off=0	0x53242ffc	0x5332b920
+CustomSettingBoxRegist4	enum	On=1 Off=0	0x53243020	0x5332b9a4
+CustomSettingBoxRegist5	enum	On=1 Off=0	0x53243044	0x5332ba28
+CustomSettingBoxRegist6	enum	On=1 Off=0	0x53243068	0x5332baac
+CustomGridLine	enum	Div9=0 Div16=1	0x5324308c	0x5332bb30
+CustomLevelType	enum	HorizonTilt=0 Horizon=1	0x5324309c	0x5332bbb4
+CustomLevelPosition	enum	Bottom=0 Center=1	0x532430c0	0x5332bc38
+CustomFlickerReduction	enum	50Hz=0 60Hz=1	0x532584b8	0x5332bcbc
+CustomKeyCustomManualExp	enum	Custom1=0 Custom2=1	0x532430d0	0x5332bd40
+CustomMOnePushAeKind	enum	P=0 Av=1 Tv=2	0x53258568	0x5332bdc4
+CustomShutterPushSetting	enum	AfWithAeLock=0 AeLock=1 Af=2	0x532430e0	0x5332be78
+CustomCrossSwitchCustom	enum	Direct=0 AfPointSelect=1	0x532430f0	0x5332bf2c
+CustomShutterPushConfirm	enum	On=0 Off=1	0x53243100	0x5332bfb0
+CustomTouchPanel	enum	On=0 Off=1	0x53243110	0x5332c034
+CustomTouchFocus	enum	AfPointSelect=0 AfPointSelectAf=1 AfPointSelectAfShot=2 FullPressSnap=4 Off=3	0x53243150	0x5332c0b8
+CustomCaptureScreenDisplayFull	enum	On=1 Off=0	0x53243160	0x5332c1cc
+CustomCaptureScreenDisplaySimple	enum	On=1 Off=0	0x53243184	0x5332c250
+CustomCaptureScreenDisplayNoInfo	enum	On=1 Off=0	0x532431a8	0x5332c2d4
+CustomCaptureScreenDisplayOff	enum	On=1 Off=0	0x532431cc	0x5332c358
+CustomCaptureHistogramFull	enum	On=1 Off=0	0x532431f0	0x5332c3dc
+CustomCaptureHistogramSimple	enum	On=1 Off=0	0x53243214	0x5332c460
+CustomCaptureHistogramNoInfo	enum	On=1 Off=0	0x53243238	0x5332c4e4
+CustomCaptureGridFull	enum	On=1 Off=0	0x5324325c	0x5332c568
+CustomCaptureGridSimple	enum	On=1 Off=0	0x53243280	0x5332c5ec
+CustomCaptureGridNoInfo	enum	On=1 Off=0	0x532432a4	0x5332c670
+CustomCaptureWhiteAlertFull	enum	On=1 Off=0	0x532432c8	0x5332c6f4
+CustomCaptureWhiteAlertSimple	enum	On=1 Off=0	0x532432ec	0x5332c778
+CustomCaptureWhiteAlertNoInfo	enum	On=1 Off=0	0x53243310	0x5332c7fc
+CustomCaptureElectronicLevelFull	enum	On=1 Off=0	0x53243334	0x5332c880
+CustomCaptureElectronicLevelSimple	enum	On=1 Off=0	0x53243358	0x5332c904
+CustomCaptureElectronicLevelNoInfo	enum	On=1 Off=0	0x5324337c	0x5332c988
+CustomPlaybackHistogramFull	enum	On=1 Off=0	0x532433a0	0x5332ca0c
+CustomPlaybackHistogramNoInfo	enum	On=1 Off=0	0x532433c4	0x5332ca90
+CustomPlaybackGridFull	enum	On=1 Off=0	0x532433e8	0x5332cb14
+CustomPlaybackGridNoInfo	enum	On=1 Off=0	0x5324340c	0x5332cb98
+CustomPlaybackWhiteAlertFull	enum	On=1 Off=0	0x53243430	0x5332cc1c
+CustomPlaybackWhiteAlertNoInfo	enum	On=1 Off=0	0x53243454	0x5332cca0
+CustomQuickViewTimeMsec	enum	500msec=500 1000msec=1000 2000msec=2000 3000msec=3000 Hold=4294967295 Off=0	0x53243478	0x5332cd24
+CustomQuickViewZoom	enum	On=1 Off=0	0x5324349c	0x5332ce68
+CustomQuickViewDelete	enum	On=1 Off=0	0x532434c0	0x5332ceec
+CustomQuickZoom	enum	x4=0 x8=1 x16=2 DotByDot=3	0x532434e4	0x5332cf70
+CustomQuickViewZoomStyle	enum	Standard=0 NoInformation=1	0x53243508	0x5332d054
+CustomFocusAreaZoom	enum	On=0 Off=1	0x5324352c	0x5332d0d8
+CustomDispInfo	enum	Full=0 Simple=1 NoInfo=2 MonitorOff=3	0x53243550	0x5332d15c
+CustomStillAdjFocusPos	enum	Item1=0 Item2=1 Item3=2 Item4=3 Item5=4	0x53243560	0x5332d240
+CustomMovieAdjFocusPos	enum	Item1=0 Item2=1 Item3=2 Item4=3 Item5=4	0x53243584	0x5332d354
+CustomAdjMode1	enum	Off=0 Focus=1 SnapDistanceCm=2 StillRecordForm=3 AspectRatio=4 Crop=16 JpegSize=5 AeMode=6 Sv=7 FlashMode=8 FlashCorrectValue=9 SnapFocusPriority=18 GF2FlashMode=19 DriveMode=10 SelfTimer=11 ImageControl=12 MModeOnePushAE=13 TouchAf=17 OutdoorMonitor=14	0x532435a8	0x5332d468
+CustomAdjMode2	enum	Off=0 Focus=1 SnapDistanceCm=2 StillRecordForm=3 AspectRatio=4 Crop=16 JpegSize=5 AeMode=6 Sv=7 FlashMode=8 FlashCorrectValue=9 SnapFocusPriority=18 GF2FlashMode=19 DriveMode=10 SelfTimer=11 ImageControl=12 MModeOnePushAE=13 TouchAf=17 OutdoorMonitor=14	0x532435b8	0x5332d81c
+CustomAdjMode3	enum	Off=0 Focus=1 SnapDistanceCm=2 StillRecordForm=3 AspectRatio=4 Crop=16 JpegSize=5 AeMode=6 Sv=7 FlashMode=8 FlashCorrectValue=9 SnapFocusPriority=18 GF2FlashMode=19 DriveMode=10 SelfTimer=11 ImageControl=12 MModeOnePushAE=13 TouchAf=17 OutdoorMonitor=14	0x532435c8	0x5332dbd0
+CustomAdjMode4	enum	Off=0 Focus=1 SnapDistanceCm=2 StillRecordForm=3 AspectRatio=4 Crop=16 JpegSize=5 AeMode=6 Sv=7 FlashMode=8 FlashCorrectValue=9 SnapFocusPriority=18 GF2FlashMode=19 DriveMode=10 SelfTimer=11 ImageControl=12 MModeOnePushAE=13 TouchAf=17 OutdoorMonitor=14	0x532435d8	0x5332df84
+CustomAdjMode5	enum	Off=0 Focus=1 SnapDistanceCm=2 StillRecordForm=3 AspectRatio=4 Crop=16 JpegSize=5 AeMode=6 Sv=7 FlashMode=8 FlashCorrectValue=9 SnapFocusPriority=18 GF2FlashMode=19 DriveMode=10 SelfTimer=11 ImageControl=12 MModeOnePushAE=13 TouchAf=17 OutdoorMonitor=14	0x532435e8	0x5332e338
+CustomSwitchFn	enum	Nop=0 Focus=1 ToggleAfMf=2 ToggleAfSnap=3 ToggleAfFollow=4 StartAf=5 AfWithAeLock=6 AeLock=7 Face=8 SnapDistanceCm=9 StillRecordForm=10 JpegToRaw=11 JpegToRawPlus=12 AspectRatio=13 Crop=14 JpegSize=15 FrameRate=16 ToggleStillMovie=17 AeMode=18 Sv=19 FlashMode=20 FlashCorrectValue=21 NdFilter=22 ToggleSnapFocusPriority=39 ToggleGF2FlashMode=41 DriveMode=23 Drive=24 SetDriveModeContinuous=25 ChangeSelfTimer=26 Hdf=40 ImageControl=27 ShakeReduction=28 MModeOnePushAE=29 ToggleCrossSwitchFunc=30 TouchAf=38 AutodoorMonitor=31	0x532435f8	0x5332e6ec
+CustomSwitchSv	enum	Nop=0 Focus=1 ToggleAfMf=2 ToggleAfSnap=3 ToggleAfFollow=4 StartAf=5 AfWithAeLock=6 AeLock=7 Face=8 SnapDistanceCm=9 StillRecordForm=10 JpegToRaw=11 JpegToRawPlus=12 AspectRatio=13 Crop=14 JpegSize=15 FrameRate=16 ToggleStillMovie=17 AeMode=18 Sv=19 FlashMode=20 FlashCorrectValue=21 NdFilter=22 ToggleSnapFocusPriority=39 ToggleGF2FlashMode=41 DriveMode=23 Drive=24 SetDriveModeContinuous=25 ChangeSelfTimer=26 Hdf=40 ImageControl=27 ShakeReduction=28 MModeOnePushAE=29 ToggleCrossSwitchFunc=30 TouchAf=38 AutodoorMonitor=31	0x53243608	0x5332edd0
+CustomSwitchRight	enum	Nop=0 Focus=1 ToggleAfMf=2 ToggleAfSnap=3 ToggleAfFollow=4 StartAf=5 AfWithAeLock=6 AeLock=7 Face=8 SnapDistanceCm=9 StillRecordForm=10 JpegToRaw=11 JpegToRawPlus=12 AspectRatio=13 Crop=14 JpegSize=15 FrameRate=16 ToggleStillMovie=17 AeMode=18 Sv=19 FlashMode=20 FlashCorrectValue=21 NdFilter=22 ToggleSnapFocusPriority=39 ToggleGF2FlashMode=41 DriveMode=23 Drive=24 SetDriveModeContinuous=25 ChangeSelfTimer=26 Hdf=40 ImageControl=27 ShakeReduction=28 MModeOnePushAE=29 ToggleCrossSwitchFunc=30 TouchAf=38 AutodoorMonitor=31	0x53243618	0x5332f4b4
+CustomSwitchWLanShort	enum	Nop=0 Focus=1 ToggleAfMf=2 ToggleAfSnap=3 ToggleAfFollow=4 Face=8 SnapDistanceCm=9 StillRecordForm=10 JpegToRaw=11 JpegToRawPlus=12 AspectRatio=13 Crop=14 JpegSize=15 FrameRate=16 ToggleStillMovie=17 AeMode=18 Sv=19 FlashMode=20 FlashCorrectValue=21 NdFilter=22 ToggleSnapFocusPriority=39 ToggleGF2FlashMode=41 DriveMode=23 Drive=24 SetDriveModeContinuous=25 ChangeSelfTimer=26 Hdf=40 ImageControl=27 ShakeReduction=28 ToggleCrossSwitchFunc=30 TouchAf=38 AutodoorMonitor=31	0x53243628	0x5332fb98
+CustomSwitchWLanLong	enum	Nop=0 Focus=1 ToggleAfMf=2 ToggleAfSnap=3 ToggleAfFollow=4 Face=8 SnapDistanceCm=9 StillRecordForm=10 JpegToRaw=11 JpegToRawPlus=12 AspectRatio=13 Crop=14 JpegSize=15 FrameRate=16 ToggleStillMovie=17 AeMode=18 Sv=19 FlashMode=20 FlashCorrectValue=21 NdFilter=22 ToggleSnapFocusPriority=39 ToggleGF2FlashMode=41 DriveMode=23 Drive=24 SetDriveModeContinuous=25 ChangeSelfTimer=26 Hdf=40 ImageControl=27 ShakeReduction=28 ToggleCrossSwitchFunc=30 TouchAf=38 AutodoorMonitor=31 WLAN=32 Preview=33	0x53243638	0x533301bc
+CustomSwitchFocusSetting	enum	SameAsShutter=12 AutoArea=0 AutoAreaM=14 ZoneSelect=15 Select=1 Pinpoint=4 Follow=5 Continuous=6	0x53243648	0x53330840
+CustomSwitchAeLockHold	enum	On=1 Off=0	0x53243658	0x533309e4
+CustomSwitchMModeOnePushAE	enum	P=0 Av=1 Tv=2	0x53243668	0x53330a68
+SetupFolderNameType	enum	Date=0 Any=1	0x53258604	0x53330b1c
+SetupFolderName	enum	On=0 Off=1	0x532586b8	0x53330ba0
+SetupStillFileName	enum	On=0 Off=1	0x532586b8	0x53330c08
+SetupMovieFileName	enum	On=0 Off=1	0x532586b8	0x53330c70
+SetupCopyright	enum	On=0 Off=1	0x532586b8	0x53330cd8
+SetupCopyrightAttach	enum	On=0 Off=1	0x532586b8	0x53330d40
+SetupFileNumbering	enum	FolderFile=0 File=1 Off=2	0x53258768	0x53330dc4
+SetupMenuCursorSave	enum	On=0 Off=1	0x53243678	0x53330e78
+SetupMenuResetCaptureSetting	enum	On=1 Off=0	0x5324369c	0x53330efc
+SetupMenuResetMovieSetting	enum	On=1 Off=0	0x532436c0	0x53330f80
+SetupMenuResetPlaySetting	enum	On=1 Off=0	0x532436e4	0x53331004
+SetupMenuResetCustomizeSetting	enum	On=1 Off=0	0x53243708	0x53331088
+SetupMenuResetSetupSetting	enum	On=1 Off=0	0x5324372c	0x5333110c
+SetupGuideDisp	enum	On=0 Off=1	0x53243750	0x53331190
+SetupAnimation	enum	On=0 Off=1	0x53243774	0x53331214
+SetupLcdBrightness	enum	M7=0 M6=1 M5=2 M4=3 M3=4 M2=5 M1=6 Normal=7 P1=8 P2=9 P3=10 P4=11 P5=12 P6=13 P7=14	0x53243798	0x53331298
+SetupLcdColorSaturation	enum	M7=0 M6=1 M5=2 M4=3 M3=4 M2=5 M1=6 Normal=7 P1=8 P2=9 P3=10 P4=11 P5=12 P6=13 P7=14	0x532437bc	0x5333158c
+SetupLcdAdjustBA	enum	B7=0 B6=1 B5=2 B4=3 B3=4 B2=5 B1=6 Normal=7 A1=8 A2=9 A3=10 A4=11 A5=12 A6=13 A7=14	0x532437e0	0x53331880
+SetupLcdAdjustGM	enum	G7=0 G6=1 G5=2 G4=3 G3=4 G2=5 G1=6 Normal=7 M1=8 M2=9 M3=10 M4=11 M5=12 M6=13 M7=14	0x53243804	0x53331b74
+SetupOutdoorMonitor	enum	P2=0 P1=1 Off=2 M1=3 M2=4	0x53243828	0x53331e68
+SetupRedView	enum	On=0 Off=1	0x5324387c	0x53331f7c
+SetupPowerOnLamp	enum	On=1 Off=0	0x53258804	0x53332000
+SetupCountDownLamp	enum	On=1 Off=0	0x532588c8	0x53332084
+SetupBeepVolume	enum	Lv3=19 Lv2=14 Lv1=7 Lv0=0	0x532438a0	0x53332108
+SetupBeep	enum	All=0 Shutter=1	0x532438c4	0x533321ec
+SetupWlan	enum	On=1 Off=0	0x53258964	0x53332270
+SetupBleMode	enum	AlwaysOn=0 LinkPowerState=1 AlwaysOff=2	0x53258a3c	0x533322f4
+SetupGeotagging	enum	On=1 Off=0	0x53258ad8	0x533323a8
+SetupTransmitResize	enum	On=1 Off=0	0x53258b74	0x5333242c
+SetupAutoTransmit	enum	On=1 Off=0	0x53258c10	0x533324b0
+SetupPowerOffImageTransfer	enum	On=1 Off=0	0x53258cac	0x53332534
+SetupJpegTransmit	enum	On=1 Off=0	0x53258d48	0x533325b8
+SetupRawTransmit	enum	On=1 Off=0	0x53258de4	0x5333263c
+SetupMovieTransmit	enum	On=1 Off=0	0x53258e80	0x533326c0
+SetupAutoPowerOff	enum	1min=60 3min=180 5min=300 10min=600 30min=1800 Off=4294967295	0x532438e8	0x53332744
+SetupSleep	enum	1min=60 3min=180 5min=300 10min=600 30min=1800 Off=4294967295	0x5324390c	0x53332888
+SetupMonitorPowerSaving	enum	On=0 Off=1	0x53243930	0x533329cc
+SetupStartUpDustRemoval	enum	On=0 Off=1	0x53243954	0x53332a50
+SetupShutDownDustRemoval	enum	On=0 Off=1	0x53243978	0x53332ad4
+SetupLanguage	enum	English=0 French=1 German=2 Spanish=3 Portuguese=4 Italian=5 Netherlandish =6 Danish=7 Swedish=8 Finnish=9 Polish=10 Czech=11 Hungarian=12 Turkish=13 Greek=14 Russian=15 Tai=16 Korean=17 TraditionalChinese=18 SimplifiedChinese=19 Japanese=20	0x5324399c	0x53332b58
+SetupLanguageSetting	enum	On=1 Off=0	0x532439c0	0x53332f6c
+SetupDateDispStyle	enum	YYMMDD=0 DDMMYY=1 MMDDYY=2	0x53258f30	0x53332ff0
+SetupExternalDisplayResolution	enum	Auto=0 1080p=1 1080i=2 720p=3 480p=4	0x532439e4	0x533330a4
+StillFwupImageControlNo0ParamCrossProcessSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268dcc	0x533331b8
+StillFwupImageControlNo0ParamCrossProcessColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268e38	0x5333338c
+StillFwupImageControlNo0ParamCrossProcessImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268ea4	0x53333560
+StillFwupImageControlNo0ParamCrossProcessContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268f10	0x53333734
+StillFwupImageControlNo0ParamCrossProcessContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268f7c	0x53333908
+StillFwupImageControlNo0ParamCrossProcessContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53268fe8	0x53333adc
+StillFwupImageControlNo0ParamCrossProcessSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269054	0x53333cb0
+StillFwupImageControlNo0ParamCrossProcessShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532690c0	0x53333e84
+StillFwupImageControlNo0ParamCrossProcessClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326912c	0x53334058
+StillFwupImageControlNo0ParamCrossProcessColorToneCrossProcess	enum	Basic=0 Magenta=1 Yellow=2	0x53269198	0x5333422c
+StillFwupImageControlNo1ParamCrossProcessSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269208	0x533342e0
+StillFwupImageControlNo1ParamCrossProcessColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269278	0x533344b4
+StillFwupImageControlNo1ParamCrossProcessImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532692e8	0x53334688
+StillFwupImageControlNo1ParamCrossProcessContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269358	0x5333485c
+StillFwupImageControlNo1ParamCrossProcessContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532693c8	0x53334a30
+StillFwupImageControlNo1ParamCrossProcessContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269438	0x53334c04
+StillFwupImageControlNo1ParamCrossProcessSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532694a8	0x53334dd8
+StillFwupImageControlNo1ParamCrossProcessShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269518	0x53334fac
+StillFwupImageControlNo1ParamCrossProcessClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269588	0x53335180
+StillFwupImageControlNo1ParamCrossProcessColorToneCrossProcess	enum	Basic=0 Magenta=1 Yellow=2	0x532695f8	0x53335354
+StillFwupImageControlNo2ParamCrossProcessSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269668	0x53335408
+StillFwupImageControlNo2ParamCrossProcessColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532696d8	0x533355dc
+StillFwupImageControlNo2ParamCrossProcessImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269748	0x533357b0
+StillFwupImageControlNo2ParamCrossProcessContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532697b8	0x53335984
+StillFwupImageControlNo2ParamCrossProcessContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269828	0x53335b58
+StillFwupImageControlNo2ParamCrossProcessContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269898	0x53335d2c
+StillFwupImageControlNo2ParamCrossProcessSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269908	0x53335f00
+StillFwupImageControlNo2ParamCrossProcessShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269978	0x533360d4
+StillFwupImageControlNo2ParamCrossProcessClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x532699e8	0x533362a8
+StillFwupImageControlNo2ParamCrossProcessColorToneCrossProcess	enum	Basic=0 Magenta=1 Yellow=2	0x53269a58	0x5333647c
+MovieFwupImageControlNo0ParamCrossProcessSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269ac4	0x53336530
+MovieFwupImageControlNo0ParamCrossProcessColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269b48	0x53336704
+MovieFwupImageControlNo0ParamCrossProcessImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269bcc	0x533368d8
+MovieFwupImageControlNo0ParamCrossProcessContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269c50	0x53336aac
+MovieFwupImageControlNo0ParamCrossProcessContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269cd4	0x53336c80
+MovieFwupImageControlNo0ParamCrossProcessContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269d58	0x53336e54
+MovieFwupImageControlNo0ParamCrossProcessSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269ddc	0x53337028
+MovieFwupImageControlNo0ParamCrossProcessShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269e60	0x533371fc
+MovieFwupImageControlNo0ParamCrossProcessClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269ee4	0x533373d0
+MovieFwupImageControlNo0ParamCrossProcessColorToneCrossProcess	enum	Basic=0 Magenta=1 Yellow=2	0x53269f68	0x533375a4
+MovieFwupImageControlNo1ParamCrossProcessSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x53269ff0	0x53337658
+MovieFwupImageControlNo1ParamCrossProcessColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326a078	0x5333782c
+MovieFwupImageControlNo1ParamCrossProcessImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326a100	0x53337a00
+MovieFwupImageControlNo1ParamCrossProcessContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326a188	0x53337bd4
+MovieFwupImageControlNo1ParamCrossProcessContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326a210	0x53337da8
+MovieFwupImageControlNo1ParamCrossProcessContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326a298	0x53337f7c
+MovieFwupImageControlNo1ParamCrossProcessSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326a320	0x53338150
+MovieFwupImageControlNo1ParamCrossProcessShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326a3a8	0x53338324
+MovieFwupImageControlNo1ParamCrossProcessClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326a430	0x533384f8
+MovieFwupImageControlNo1ParamCrossProcessColorToneCrossProcess	enum	Basic=0 Magenta=1 Yellow=2	0x5326a4b8	0x533386cc
+MovieFwupImageControlNo2ParamCrossProcessSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326a540	0x53338780
+MovieFwupImageControlNo2ParamCrossProcessColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326a5c8	0x53338954
+MovieFwupImageControlNo2ParamCrossProcessImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326a650	0x53338b28
+MovieFwupImageControlNo2ParamCrossProcessContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326a6d8	0x53338cfc
+MovieFwupImageControlNo2ParamCrossProcessContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326a760	0x53338ed0
+MovieFwupImageControlNo2ParamCrossProcessContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326a7e8	0x533390a4
+MovieFwupImageControlNo2ParamCrossProcessSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326a870	0x53339278
+MovieFwupImageControlNo2ParamCrossProcessShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326a8f8	0x5333944c
+MovieFwupImageControlNo2ParamCrossProcessClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326a980	0x53339620
+MovieFwupImageControlNo2ParamCrossProcessColorToneCrossProcess	enum	Basic=0 Magenta=1 Yellow=2	0x5326aa08	0x533397f4
+AfterReleaseSnapFocusPriority	enum	On=0 Off=1	0x5327348c	0x533398a8
+AfterReleaseSnapFocusPriorityDepthOfField	enum	Shallow=0 Medium=1 PanFocus=2	0x532720e4	0x5333992c
+AfterReleaseInvalidSnapFocusPriority	enum	On=0 Off=1	0x53273400	0x533399e0
+AfterReleaseStillImageControlNo0ParamNegativeFilmSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326aa8c	0x53339a64
+AfterReleaseStillImageControlNo0ParamNegativeFilmColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326aaf8	0x53339c38
+AfterReleaseStillImageControlNo0ParamNegativeFilmImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326ab64	0x53339e0c
+AfterReleaseStillImageControlNo0ParamNegativeFilmContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326abd0	0x53339fe0
+AfterReleaseStillImageControlNo0ParamNegativeFilmContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326ac3c	0x5333a1b4
+AfterReleaseStillImageControlNo0ParamNegativeFilmContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326aca8	0x5333a388
+AfterReleaseStillImageControlNo0ParamNegativeFilmSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326ad14	0x5333a55c
+AfterReleaseStillImageControlNo0ParamNegativeFilmShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326ad80	0x5333a730
+AfterReleaseStillImageControlNo0ParamNegativeFilmClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326adec	0x5333a904
+AfterReleaseStillImageControlNo0ParamNegativeFilmParticle	enum	Off=0 Low=3 Mid=2 High=1	0x5326ae58	0x5333aad8
+AfterReleaseStillImageControlNo1ParamNegativeFilmSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326aec8	0x5333abbc
+AfterReleaseStillImageControlNo1ParamNegativeFilmColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326af38	0x5333ad90
+AfterReleaseStillImageControlNo1ParamNegativeFilmImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326afa8	0x5333af64
+AfterReleaseStillImageControlNo1ParamNegativeFilmContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b018	0x5333b138
+AfterReleaseStillImageControlNo1ParamNegativeFilmContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b088	0x5333b30c
+AfterReleaseStillImageControlNo1ParamNegativeFilmContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b0f8	0x5333b4e0
+AfterReleaseStillImageControlNo1ParamNegativeFilmSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b168	0x5333b6b4
+AfterReleaseStillImageControlNo1ParamNegativeFilmShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b1d8	0x5333b888
+AfterReleaseStillImageControlNo1ParamNegativeFilmClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b248	0x5333ba5c
+AfterReleaseStillImageControlNo1ParamNegativeFilmParticle	enum	Off=0 Low=3 Mid=2 High=1	0x5326b2b8	0x5333bc30
+AfterReleaseStillImageControlNo2ParamNegativeFilmSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b328	0x5333bd14
+AfterReleaseStillImageControlNo2ParamNegativeFilmColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b398	0x5333bee8
+AfterReleaseStillImageControlNo2ParamNegativeFilmImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b408	0x5333c0bc
+AfterReleaseStillImageControlNo2ParamNegativeFilmContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b478	0x5333c290
+AfterReleaseStillImageControlNo2ParamNegativeFilmContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b4e8	0x5333c464
+AfterReleaseStillImageControlNo2ParamNegativeFilmContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b558	0x5333c638
+AfterReleaseStillImageControlNo2ParamNegativeFilmSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b5c8	0x5333c80c
+AfterReleaseStillImageControlNo2ParamNegativeFilmShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b638	0x5333c9e0
+AfterReleaseStillImageControlNo2ParamNegativeFilmClarityControl	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b6a8	0x5333cbb4
+AfterReleaseStillImageControlNo2ParamNegativeFilmParticle	enum	Off=0 Low=3 Mid=2 High=1	0x5326b718	0x5333cd88
+AfterReleaseMovieImageControlNo0ParamNegativeFilmSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b784	0x5333ce6c
+AfterReleaseMovieImageControlNo0ParamNegativeFilmColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b7f0	0x5333d040
+AfterReleaseMovieImageControlNo0ParamNegativeFilmImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b85c	0x5333d214
+AfterReleaseMovieImageControlNo0ParamNegativeFilmContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b8c8	0x5333d3e8
+AfterReleaseMovieImageControlNo0ParamNegativeFilmContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b934	0x5333d5bc
+AfterReleaseMovieImageControlNo0ParamNegativeFilmContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326b9a0	0x5333d790
+AfterReleaseMovieImageControlNo0ParamNegativeFilmSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326ba0c	0x5333d964
+AfterReleaseMovieImageControlNo0ParamNegativeFilmShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326ba78	0x5333db38
+AfterReleaseMovieImageControlNo1ParamNegativeFilmSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326bae8	0x5333dd0c
+AfterReleaseMovieImageControlNo1ParamNegativeFilmColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326bb58	0x5333dee0
+AfterReleaseMovieImageControlNo1ParamNegativeFilmImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326bbc8	0x5333e0b4
+AfterReleaseMovieImageControlNo1ParamNegativeFilmContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326bc38	0x5333e288
+AfterReleaseMovieImageControlNo1ParamNegativeFilmContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326bca8	0x5333e45c
+AfterReleaseMovieImageControlNo1ParamNegativeFilmContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326bd18	0x5333e630
+AfterReleaseMovieImageControlNo1ParamNegativeFilmSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326bd88	0x5333e804
+AfterReleaseMovieImageControlNo1ParamNegativeFilmShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326bdf8	0x5333e9d8
+AfterReleaseMovieImageControlNo2ParamNegativeFilmSaturation	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326be68	0x5333ebac
+AfterReleaseMovieImageControlNo2ParamNegativeFilmColorHue	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326bed8	0x5333ed80
+AfterReleaseMovieImageControlNo2ParamNegativeFilmImageKey	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326bf48	0x5333ef54
+AfterReleaseMovieImageControlNo2ParamNegativeFilmContrast	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326bfb8	0x5333f128
+AfterReleaseMovieImageControlNo2ParamNegativeFilmContrastHighLight	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326c028	0x5333f2fc
+AfterReleaseMovieImageControlNo2ParamNegativeFilmContrastShadow	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326c098	0x5333f4d0
+AfterReleaseMovieImageControlNo2ParamNegativeFilmSharpness	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326c108	0x5333f6a4
+AfterReleaseMovieImageControlNo2ParamNegativeFilmShading	enum	M4=0 M3=1 M2=2 M1=3 OFF=4 P1=5 P2=6 P3=7 P4=8	0x5326c178	0x5333f878
+AfterReleaseGoodByeDisplay	enum	TodaysShots=0 TodaysShotsAndTotalShotsAndFwVersion=1	0x53243a08	0x5333fa4c
+AfterReleaseElectronicLevelDisplayDesign	enum	Type1=0 Type2=1 Type3=2	0x53243a2c	0x5333fad0
+AfterReleaseStillWhiteBalanceCustom1	enum	Auto=0 Multi=1 Daylight=2 Shade=3 Cloudiness=4 Flu_D=5 Flu_N=6 Flu_W=7 Flu_L=8 Tungsten=9 Strobe=10 Manual1=11 Manual2=12 Manual3=13 ColorTemp1=14 ColorTemp2=15 ColorTemp3=16 Cte=17 Custom1=255 Custom2=254 Custom3=253	0x5327223c	0x5333fb84
+AfterReleaseStillWhiteBalanceCustom1GM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x532727f0	0x5333ff98
+AfterReleaseStillWhiteBalanceCustom1BA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272da4	0x5334052c
+AfterReleaseStillWhiteBalanceCustom1ColorTemp	int			0x53340ac0
+AfterReleaseStillWhiteBalanceCustom2	enum	Auto=0 Multi=1 Daylight=2 Shade=3 Cloudiness=4 Flu_D=5 Flu_N=6 Flu_W=7 Flu_L=8 Tungsten=9 Strobe=10 Manual1=11 Manual2=12 Manual3=13 ColorTemp1=14 ColorTemp2=15 ColorTemp3=16 Cte=17 Custom1=255 Custom2=254 Custom3=253	0x5327225c	0x53340b48
+AfterReleaseStillWhiteBalanceCustom2GM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x53272810	0x53340f5c
+AfterReleaseStillWhiteBalanceCustom2BA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272dc4	0x533414f0
+AfterReleaseStillWhiteBalanceCustom2ColorTemp	int			0x53341a84
+AfterReleaseStillWhiteBalanceCustom3	enum	Auto=0 Multi=1 Daylight=2 Shade=3 Cloudiness=4 Flu_D=5 Flu_N=6 Flu_W=7 Flu_L=8 Tungsten=9 Strobe=10 Manual1=11 Manual2=12 Manual3=13 ColorTemp1=14 ColorTemp2=15 ColorTemp3=16 Cte=17 Custom1=255 Custom2=254 Custom3=253	0x5327227c	0x53341b0c
+AfterReleaseStillWhiteBalanceCustom3GM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x53272830	0x53341f20
+AfterReleaseStillWhiteBalanceCustom3BA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272de4	0x533424b4
+AfterReleaseStillWhiteBalanceCustom3ColorTemp	int			0x53342a48
+AfterReleaseMovieWhiteBalanceCustom1	enum	Auto=0 Multi=1 Daylight=2 Shade=3 Cloudiness=4 Flu_D=5 Flu_N=6 Flu_W=7 Flu_L=8 Tungsten=9 Strobe=10 Manual1=11 Manual2=12 Manual3=13 ColorTemp1=14 ColorTemp2=15 ColorTemp3=16 Cte=17 Custom1=255 Custom2=254 Custom3=253	0x5327229c	0x53342ad0
+AfterReleaseMovieWhiteBalanceCustom1GM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x53272850	0x53342ee4
+AfterReleaseMovieWhiteBalanceCustom1BA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272e04	0x53343478
+AfterReleaseMovieWhiteBalanceCustom1ColorTemp	int			0x53343a0c
+AfterReleaseMovieWhiteBalanceCustom2	enum	Auto=0 Multi=1 Daylight=2 Shade=3 Cloudiness=4 Flu_D=5 Flu_N=6 Flu_W=7 Flu_L=8 Tungsten=9 Strobe=10 Manual1=11 Manual2=12 Manual3=13 ColorTemp1=14 ColorTemp2=15 ColorTemp3=16 Cte=17 Custom1=255 Custom2=254 Custom3=253	0x532722d4	0x53343a94
+AfterReleaseMovieWhiteBalanceCustom2GM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x53272888	0x53343ea8
+AfterReleaseMovieWhiteBalanceCustom2BA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272e3c	0x5334443c
+AfterReleaseMovieWhiteBalanceCustom2ColorTemp	int			0x533449d0
+AfterReleaseMovieWhiteBalanceCustom3	enum	Auto=0 Multi=1 Daylight=2 Shade=3 Cloudiness=4 Flu_D=5 Flu_N=6 Flu_W=7 Flu_L=8 Tungsten=9 Strobe=10 Manual1=11 Manual2=12 Manual3=13 ColorTemp1=14 ColorTemp2=15 ColorTemp3=16 Cte=17 Custom1=255 Custom2=254 Custom3=253	0x5327230c	0x53344a58
+AfterReleaseMovieWhiteBalanceCustom3GM	enum	G14=0 G13=1 G12=2 G11=3 G10=4 G9=5 G8=6 G7=7 G6=8 G5=9 G4=10 G3=11 G2=12 G1=13 NORMAL=14 M1=15 M2=16 M3=17 M4=18 M5=19 M6=20 M7=21 M8=22 M9=23 M10=24 M11=25 M12=26 M13=27 M14=28	0x532728c0	0x53344e6c
+AfterReleaseMovieWhiteBalanceCustom3BA	enum	B14=0 B13=1 B12=2 B11=3 B10=4 B9=5 B8=6 B7=7 B6=8 B5=9 B4=10 B3=11 B2=12 B1=13 NORMAL=14 A1=15 A2=16 A3=17 A4=18 A5=19 A6=20 A7=21 A8=22 A9=23 A10=24 A11=25 A12=26 A13=27 A14=28	0x53272e74	0x53345400
+AfterReleaseMovieWhiteBalanceCustom3ColorTemp	int			0x53345994
+AfterReleaseModeMemorySv	enum	On=1 Off=0	0x53243a50	0x53345a1c
+AfterReleaseModeMemoryXv	enum	On=1 Off=0	0x53243a74	0x53345aa0
+AfterReleaseModeMemoryFocus	enum	On=1 Off=0	0x53243a98	0x53345b24
+AfterReleaseModeMemoryFocusAssist	enum	On=1 Off=0	0x53243abc	0x53345ba8
+AfterReleaseModeMemoryAeMode	enum	On=1 Off=0	0x53243ae0	0x53345c2c
+AfterReleaseModeMemoryFlashMode	enum	On=1 Off=0	0x53243b04	0x53345cb0
+AfterReleaseModeMemoryFlashCorrect	enum	On=1 Off=0	0x53243b28	0x53345d34
+AfterReleaseModeMemoryWhiteBalance	enum	On=1 Off=0	0x53243b4c	0x53345db8
+AfterReleaseModeMemoryStillMovie	enum	On=1 Off=0	0x53243b70	0x53345e3c
+AfterReleaseModeMemorySnapFocusPriority	enum	On=1 Off=0	0x53243b94	0x53345ec0
+AfterReleaseModeMemoryMacroMode	enum	On=1 Off=0	0x53243bb8	0x53345f44
+AfterReleaseModeMemoryDrive	enum	On=1 Off=0	0x53243bdc	0x53345fc8
+AfterReleaseModeMemorySelfTimer	enum	On=1 Off=0	0x53243c00	0x5334604c
+AfterReleaseModeMemoryLowPassSelector	enum	On=1 Off=0	0x53243c24	0x533460d0
+AfterReleaseModeMemoryAspectRatio	enum	On=1 Off=0	0x53243c48	0x53346154
+AfterReleaseModeMemoryCrop	enum	On=1 Off=0	0x53243c6c	0x533461d8
+AfterReleaseModeMemoryImageControl	enum	On=1 Off=0	0x53243c90	0x5334625c
+AfterReleaseModeMemoryAdjCustom	enum	On=1 Off=0	0x53243cb4	0x533462e0
+AfterReleaseModeMemoryCaptureDispInfo	enum	On=1 Off=0	0x53243cd8	0x53346364
+AfterReleaseModeMemoryPlaybackDispInfo	enum	On=1 Off=0	0x53243cfc	0x533463e8
+AfterReleaseModeMemoryPlaybackImage	enum	On=1 Off=0	0x53243d20	0x5334646c
+AfterReleaseModeMemoryOutdoorMonitor	enum	On=1 Off=0	0x53243d44	0x533464f0
+AfterReleaseStillHdf	enum	On=0 Off=1	0x5325b8dc	0x53346574
+AfterReleaseMovieHdf	enum	On=0 Off=1	0x5325b98c	0x533465f8
+AfterReleaseModeMemoryHdf	enum	On=1 Off=0	0x53243d68	0x5334667c
+AfterReleaseCommonGF2FlashModeActive	enum	On=0 Off=1	0x53273618	0x53346700
+AfterReleaseStillGF2FlashMode	enum	On=0 Off=1	0x532734ec	0x53346784

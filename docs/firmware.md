@@ -27,7 +27,8 @@ git rev `438ff331`).
 - `tools/ghs/CallUp.java` — walk callers upward with referenced strings.
 - `tools/movref.py rtos.bin <string>` — find movw/movt + literal-pool references
   to a string (most string refs in this firmware are movw/movt pairs).
-- `tools/constref.py rtos.bin <const>` — same for 32-bit constants.
+- `tools/constref.py rtos.bin <const>`: same for 32-bit constants.
+- `tools/userdata_values.py rtos.bin`: regenerates `data/userdata_set_values.tsv`.
 
 Example:
 
@@ -54,7 +55,7 @@ analyzeHeadless gproj gr3x -process -noanalysis -readOnly \
 | TTL interpreter | keywords `FUN_538c343c`, dispatch `FUN_538c1258`, sendln `FUN_538c06ac`, errors `FUN_538c3148`, run loop `FUN_538bc080` |
 | Debug log printf | `FUN_536b8150`, `FUN_536b82d4` |
 
-## Other channels examined
+## Other interfaces
 
 - Wi-Fi HTTP API: can only select an effect (incl. Custom 1/2), not edit params.
 - USB/MTP (`mtpd`): setters for saturation etc. exist but are dead code.
