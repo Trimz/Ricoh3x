@@ -23,5 +23,7 @@ Card layouts are in [`sdcard/`](../sdcard).
 | 7 | 2026-10-15 | `step7_verify_batch` | normal on/off | in `shutdown.ttl`: export, set 8 values, export, restore, export. All three exports identical → exports show the **saved** state and sets made in `shutdown.ttl` are never saved. Camera unchanged. |
 | 8a | 2026-10-15 | `step8_verify_two_round/round1` | normal on/off | `startup.ttl` sets 8 values, `shutdown.ttl` exports. All 8 changed exactly as intended, nothing else (except lens focus position). User saw Custom 1 contrast +1 in the menu. |
 | 8b | 2026-10-15 | `step8_verify_two_round/round2` | normal on/off | same with the original values. Export identical to the pre-test export (0 differences). User saw Custom 1 contrast back at 0. |
+| 9 | 2026-10-15 | round-trip "restore" of 956 settings (generated, personal, not committed) | normal on/off | **Camera damaged:** slow menus, live-view noise, freeze after every shot. Export differed from the backup. See incident-2026-10-15.md. |
+| 9r | 2026-10-15 | recovery | — | Reset Settings, card format, firmware 1.60 reinstall, `[DBG_LOG_STORE_EN_MODE DIS]` and `[SCRIPT_EN_MODE DIS]` (confirmed). Freeze after shots remains → Ricoh service. |
 
 Exception logs: `camlogs/2d` (from tests 2–2d), `camlogs/3b` (test 3).

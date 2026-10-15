@@ -6,6 +6,11 @@ firmware v1.60 and has only been tested on one Ricoh GR IIIx. Nothing is
 supported by Ricoh, and misuse can lose settings, void warranty, or in the worst
 case brick the camera.
 
+> **Incident:** a bulk write of 956 settings (meant as a no-op restore) left the test camera
+> freezing after every shot. Neither a settings reset, a firmware reinstall nor reverting the
+> developer flags fixed it; the camera went to Ricoh service. See
+> [incident-2026-10-15.md](incident-2026-10-15.md). **Never bulk-write settings.**
+
 ## Hard rules
 
 1. **Never flash modified firmware.** Everything in this repo works without
@@ -77,6 +82,12 @@ good reason and explicit user consent:
   Undo: `sdcard/undo_disable_scripts/` via MENU+power.
 - Debug-log storage (`DBG_LOG_STORE_EN_MODE EN`) — makes exception logs contain a
   "Flush Log" section. Undo: `sdcard/undo_debuglog/` via MENU+power.
+
+## Bulk writes
+
+- Never write more than a handful of settings in one go. `grsettings.py script` refuses more
+  than 20.
+- Never "restore" a whole export through `UserData Set`. It is not a no-op (see the incident).
 
 ## Timing rules learned the hard way
 

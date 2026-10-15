@@ -10,6 +10,9 @@ drive, noise reduction, playback, setup, button customisation, user modes)
 through the camera's own settings code. Changes show in the menus and survive
 reboots. No firmware modification is involved.
 
+> 🛑 **A bulk settings write damaged the test camera** (it freezes after every shot, even after
+> a reset and firmware reinstall). Read [docs/incident-2026-10-15.md](docs/incident-2026-10-15.md).
+>
 > ⚠️ This is undocumented developer functionality on real hardware. Read
 > [docs/SAFETY.md](docs/SAFETY.md) first. Never flash modified firmware.
 > Everything is specific to **firmware 1.60**. AI agents: read [AGENTS.md](AGENTS.md).
@@ -45,6 +48,15 @@ reboots. No firmware modification is involved.
    `python3 -I tools/dom_parse.py KB609.DOM data/userdata_set_values.tsv`.
 
 Valid item names and values: [data/userdata_set_values.tsv](data/userdata_set_values.tsv).
+
+## Tools
+
+| Tool | Does |
+|---|---|
+| `tools/grsettings.py` | decode / diff settings exports, export → editable profile, profile → validated card scripts (max 20 items; **no bulk restore**) |
+| `tools/xmp_to_profile.py` | Lightroom preset → Custom 1/2 profile |
+| `tools/userdata_values.py`, `tools/shell_usage.py` | regenerate the data tables from the firmware |
+| `tools/pdec.py` | firmware decompressor |
 
 ## Repository layout
 

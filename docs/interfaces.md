@@ -12,7 +12,13 @@ Wi-Fi app (Linux `camctld` → IPCU → RTOS). They can be called from a script 
 *live* camera state (shooting, power, radio), so treat them like button presses.
 Settings changes are cleaner through `UserData Set` (settings.md).
 
-Notables: `camctl_capture` / `camctl_af` (shoot / autofocus from a script),
+**Why camctl is not tested:** every `camctl_*` request goes through a sender object
+(`FUN_533b27c8()+4` → `FUN_533b3e30`) whose pointer is initialised to 0 and is never written
+anywhere in the RTOS image. It is most likely only valid while a Wi-Fi app session is up. Called
+from a script it would dereference NULL like `camprop_*_wo_linux`, and a crash in
+`startup.ttl` blocks boot. Use `UserData Set` instead.
+
+Notables: `camctl_capture start|stop` / `camctl_af` (shoot / autofocus),
 `camctl_power off`, `camctl_set_still_image_ctrl <custom no> <effect>` (selects
 only the effect of a slot, no parameters).
 

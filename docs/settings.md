@@ -163,6 +163,40 @@ Recommended pattern: set values in `startup.ttl`, export in `shutdown.ttl`.
 The import direction (`dd_in`, `[USR_DAT_WRITE]`) restores a whole package and is on the
 do-not-run list until the format is fully understood.
 
+## User modes (U1–U3)
+
+The UserData model holds 8 struct copies (`APData01`–`08` in an export): `APData01` is the
+live settings, the others are the user-mode boxes. `CustomSettingBox{1,2,3}` select which of
+6 boxes (`No1`–`No6`) the mode-dial positions U1–U3 load; `CustomSettingBoxRegist{1..6}`
+flag which boxes hold saved settings. `UserData Set` writes the live copy (or all copies for
+`*8` items), so loading a whole user mode from the card still means: set the live values,
+then save them to a U position in the camera menu. (The `CustomSettingBoxName*`/`Regist1`
+store offsets in the table are unreliable; those setters use an index.)
+
+## Other records in an export
+
+| Record | Size (test camera) | Content (structure only) |
+|---|---|---|
+| `APP/APData00`, `APData11` | 1–2 bytes | flags |
+| `APP/APData01`–`08` | 0xb26 each | UserData: live settings + user-mode boxes |
+| `APP/APData09`, `APData10` | 41 KB / 4 KB | further app data (not decoded) |
+| `HT/HTData06`–`08` | 2.5 KB / 48 B / 176 B | wireless: pairing data, **includes the paired phone's name and Bluetooth address** |
+| `INF/IFData00` | 77 KB, mostly zero | information/database area (not decoded) |
+| `PF/PFData00`–`03` | small | platform data (not decoded) |
+| `DC/DCData00` | 64 B | (not decoded) |
+| `FE/FEData01` | 1 byte | |
+
+## Tools
+
+- `tools/grsettings.py decode KB609.DOM [filter]`: every setting with its value.
+- `tools/grsettings.py diff A.DOM B.DOM`: what changed.
+- `tools/grsettings.py profile KB609.DOM > my.profile`: an editable `Item = Value` file
+  (deny-listed and "unset" sentinel values left out; signed 16-bit fields written as negatives).
+- `tools/grsettings.py script my.profile OUTDIR [--export]`: validated `startup.ttl` for a
+  **small** profile (max 20 items; bulk restore damaged the test camera, see incident-2026-10-15.md)
+  (+ `shutdown.ttl` export). Refuses unknown items, invalid values and deny-listed items.
+- `tools/xmp_to_profile.py preset.xmp --slot 1|2`: Lightroom preset → Custom slot profile.
+
 ## Regenerating
 
 ```

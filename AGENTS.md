@@ -14,6 +14,8 @@ developer features. Before proposing any on-camera step:
 6. Tell the user before anything that writes camera settings, and say which
    slot/setting will change so they can note the old value.
 7. After a script has run once, remove it from the card.
+7a. **Never bulk-write settings** (more than a handful) and never "restore" a whole export
+   by script: it damaged the test camera (docs/incident-2026-10-15.md).
 8. This repo is a knowledge base: record every finding in `docs/` and every
    on-camera run in `docs/test-log.md` (what was run, exact command, outcome).
 
