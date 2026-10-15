@@ -52,7 +52,7 @@ good reason and explicit user consent:
   `COLLAB_MODE *`, `LENS_FILTER_TYPE *`, `WIFI_INFO_PASSKEY_INIT`,
   `THERMAL_SHUTDOWN DIS`, `SR_PWM_OFF`, `RELEASE_AGING`, `*_RF_TEST`.
   (ADJ_DAT = factory calibration data. Losing it is not recoverable by the user.)
-- Shell: `sys_factory*`, `med_format`, `ftest_format_sd`, `med_rm`, `med_restore`,
+- Shell: `dd_in`, `dd_load`, `dd_recover_*`, `dd_refresh_*` (settings import/restore), `sys_factory*`, `med_format`, `ftest_format_sd`, `med_rm`, `med_restore`,
   `med_break`, `sys_fwdump`, anything `CAP_*`, `Mxic_*`, `Sdram_*`, `Arbiter_*`,
   `SR_*`, `wlanrf_*`, `blerf_*`, `FE_*`/`BE_*` debug, `USB_*`, `cpu_*`.
 
@@ -77,6 +77,12 @@ good reason and explicit user consent:
   Undo: `sdcard/undo_disable_scripts/` via MENU+power.
 - Debug-log storage (`DBG_LOG_STORE_EN_MODE EN`) — makes exception logs contain a
   "Flush Log" section. Undo: `sdcard/undo_debuglog/` via MENU+power.
+
+## Personal data
+
+Settings exports (`KB609.DOM`) contain the owner's configuration and probably Wi-Fi
+credentials and device identifiers. Never commit or publish them (`.gitignore` excludes
+`camdata/` and `*.DOM`).
 
 ## Recovery playbook
 

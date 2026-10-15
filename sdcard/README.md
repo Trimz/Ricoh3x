@@ -14,6 +14,7 @@ between experiments. Read ../docs/SAFETY.md first.
 | `step2a_fileonly/` | normal | writes `C:\ttl_a.txt` | verified |
 | `step2b_one_sendln/` | normal | runs `CPU_buildinfo`, writes markers | verified |
 | `step4_userdata_set/` | normal | **writes** Custom 2 = Standard, Saturation +2 | verified |
+| `step5_export_settings/` | normal | exports all settings to `C:\KB609.DOM` (`dd_out`) | verified, read-only |
 | `_DO_NOT_USE_crashes/` | — | scripts that crashed the camera; kept as evidence only | **do not use** |
 
 Remember: delete `script/startup.ttl` after it has run once.

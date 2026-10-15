@@ -18,5 +18,6 @@ Card layouts are in [`sdcard/`](../sdcard).
 | 3 | 2026-10-15 | `_DO_NOT_USE_crashes/step3_debuglog` | normal on/off | `camprop_get_current 128` → "unknown property accessed", crash; exception logs now include Flush Log |
 | 4 | 2026-10-15 | `step4_userdata_set` | normal | `UserData Set StillImageControlNo2 Standard` + `…No2ParamStandardSaturation P2` → menu shows Custom 2 = Standard, Saturation +2 |
 | 4b | 2026-10-15 | (script removed) | normal | Custom 2 still Saturation +2: **persistent** |
+| 5 | 2026-10-15 | `step5_export_settings` | normal | `sendln 'dd_out'` wrote `C:\KB609.DOM` (150,512 bytes); boot normal. Chunks APP/HT/FE/INF/PF/DC. |
 
 Exception logs: `camlogs/2d` (from tests 2–2d), `camlogs/3b` (test 3).

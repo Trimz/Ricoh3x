@@ -1,0 +1,63 @@
+address	name	area	notes
+0x53000000	reset_vectors	rtos	RTOS image base (decompressed offset 0x10870)
+0x53008038	shell_UserData	settings	UserData Get/Set dispatcher (argc 3 = Get, 4 = Set)
+0x53386230	UserData_Get	settings	strcmp chain over item names, prints value tokens to debug log
+0x5334688c	UserData_Set	settings	strcmp chain over 1036 item names; per-item value parser tail-calls; too big for decompiler
+0x5320ad88	App_GetInstance	settings	first of the two model getters used before every UserData setter
+0x5320b31c	App_GetUserDataModel	settings	returns UserData model (struct pointers at +4..+0x20)
+0x5325de5c	UD_SetStillIC1StandardSaturation	settings	example setter: strb r1,[ud+0x2aa]
+0x532e8cf4	UD_Set_StillImageControlNo2_parser	settings	base effect token parser for Custom 2
+0x5327b3d4	UD_SetStillImageControlNo2	settings	setter: strb [ud+0x1c6]
+0x53143b48	strtod	libc	float value parser
+0x53143e20	strtoul	libc	int value parser (base 0)
+0x53143ff0	strtol	libc	base-10 parser (camprop ids)
+0x531416e8	strcmp	libc
+0x53141248	sprintf	libc
+0x536b8150	dbg_printf	log	debug log printf (only when logging enabled)
+0x536b82d4	dbg_log	log	leveled debug log
+0x536bae98	shell_usage	shell	prints usage(argv0, description, args[], nargs)
+0x536baf50	shell_getopt	shell	returns option string; 'h' = help
+0x53042b34	shell_SYS_copylog	logs	needs <dirname>; calls copy_debug_log + copy_exception_log
+0x536b98d0	copy_debug_log	logs	copies valid debug-log slots to <dir>\log%d.txt
+0x536c1958	copy_exception_log	logs	copies exception logs to <dir>\except%d.txt
+0x5304b6f8	shell_dd_out	settings	export DomainData to C:\KB<model>.DOM
+0x5304b7a8	shell_dd_in	settings	import DomainData from card (dangerous)
+0x53828014	DomainData_GetInstance	settings
+0x53827ac4	DomainDataFactory_BuildPackage	settings	allocates app/be/fe/ht/info/pf/dc domain objects, formats C:\ and F:\KB%ld.DOM
+0x53828b04	DomainData_CreatePackage	settings	serialises domains as [tag4][u32 len][data] chunks
+0x53828a44	DomainData_WriteChunk	settings
+0x53828ea8	DomainData_OutputToCard	settings	writes package to C:\KB<model>.DOM
+0x53828410	DomainData_InputFromCard	settings	reads C:\KB<model>.DOM and restores (dangerous)
+0x53828148	DomainData_Restore	settings	dispatches chunks by tag
+0x53829000	DomainData_SaveToFlash	settings	writes F:\KB<model>.DOM (internal persistent copy)
+0x53826ef0	AppData_Serialize	settings	12 sub-records, 0x3c/0x14-byte headers
+0x53826bac	AppData_Restore	settings
+0x536be850	ModeSet_AnalyzeFile	modeset	parses C:\%08ld.%03ld
+0x5383728c	ModeSet_StateMachine	modeset	events 0xa1c08101..04
+0x536bf368	ModeSet_Execute	modeset	switch on command index (see docs/modeset.md)
+0x532912a8	ModeSet_OnMessage	modeset	maps command index -> dev item via 0x53b5b6a0
+0x53290c58	DevItem_Dispatch	modeset	inline flag items + controller launch
+0x53290798	DevItem_EnableScript	modeset	flag +0x10
+0x53290aa8	DevItem_EnableDebugLog	modeset	flag +0x20
+0x5319d330	InformationScreen_Build	modeset	DSP/CPU version, Camera Mode Normal/Debug
+0x538f2d94	tbl_ModeSetCommands	modeset	58 x 0x20-byte strings
+0x53b5b6a0	tbl_ModeSetMap	modeset	58 x {int16 idx, u8 item, u8 sub}
+0x538bc080	TTL_Run	script	interpreter main loop
+0x538bc6ac	TTL_Init	script	binds sendln callbacks, creates system variables
+0x538c343c	TTL_LookupKeyword	script
+0x538c1258	TTL_ExecStatement	script
+0x538c06ac	TTL_sendln	script	runs shell command via callback; output not captured
+0x538bcf4c	TTL_execcmnd	script	runs string as TTL line
+0x538c3148	TTL_Error	script	logs "script %s error: %s"
+0x538330bc	Script_StartupExists	script	checks C:\script\startup.ttl
+0x53821690	Script_IsEnabled	script	flag == 0x5aa5a55a
+0x53013500	shell_camprop_get_current_wo_linux	danger	crashes (NULL object FUN_533bcd04()+0xc)
+0x530135fc	shell_camprop_get_support_wo_linux	danger	crashes
+0x53013730	shell_camprop_set_wo_linux	danger	crashes
+0x53013dc4	shell_camprop_get_current	danger	crashes on unknown ids
+0x53013c34	shell_camprop_get_setting	danger	crashes on unknown ids
+0x533c43e8	CamProp_GetManager	camprop
+0x533c8498	CamProp_Lookup	camprop	returns default object for unknown ids
+0x53525d5c	System_GetInstance	system
+0x53527514	System_SaveFlags	system	persists developer flag block
+0x53820074	stack_chk_fail	libc

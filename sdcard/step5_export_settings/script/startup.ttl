@@ -1,0 +1,8 @@
+; step5 startup: export all settings (DomainData) to C:\KB<model>.DOM via shell dd_out. Read-only for the camera.
+filecreate fh 'C:\ttl_5.txt'
+filewriteln fh 'start'
+fileclose fh
+sendln 'dd_out'
+fileopen fh 'C:\ttl_5.txt' 1
+filewriteln fh 'after dd_out'
+fileclose fh

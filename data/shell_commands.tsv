@@ -583,4 +583,3 @@ SYS_shutdown	0x5304c0ac
 SYS_ctrlstat	0x5304c288
 SYS_reboot	0x5304c324
 SYS_batt	0x5304c500
-shell_cmd_list_end	0x00000000

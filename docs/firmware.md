@@ -7,13 +7,30 @@ git rev `438ff331`).
 
 ## Format
 
-- Unencrypted. Pentax/Ricoh-style LZ stream starting at file offset `0x80`.
-  `tools/pdec.py fwdc243b.bin out/s00.bin` decompresses it (block format is
-  documented in the script's docstring).
-- RTOS image: offset `0x10870` in the decompressed stream, length `0x10b55c0`,
-  ARMv7 LE, base `0x53000000` (`out/rtos.bin`).
-- Also inside: a Linux kernel + cpio rootfs for the Wi-Fi/BLE side (`lx/`,
-  `rootfs/`; `mtpd` lives there), and a boot loader (`out/loader.bin`).
+- Unencrypted. Header (0x80 bytes): `RICOH`, `GR IIIx`, `RICOH IMAGING COMPANY, LTD.`,
+  model code `0x261` (= 609, the "KB609" used in file names such as `KB609.DOM`),
+  build date `2025/09/25 11:30:50 JST`.
+- From offset `0x80`: a Pentax/Ricoh-style LZ stream.
+  `tools/pdec.py fwdc243b.bin out/s00.bin` decompresses it (59.7 MB; the block format
+  is in the script's docstring).
+- The decompressed image is a list of sections, each with a 16-byte header
+  `char name[8]; u16 4; u16 index; u32 size;` followed by `size` bytes:
+
+| Offset in s00 | Section | idx | Size | Content |
+|---|---|---|---|---|
+| `0x0` | (loader) | | `0x10860` | boot loader (`out/loader.bin`); contains the `BOOT` section below |
+| `0xb318` | `BOOT` | 0 | `0x5538` | starts with ARM vectors |
+| `0x10860` | `RTOS` | 1 | `0x10b55c0` | main RTOS, ARMv7, base `0x53000000` (`out/rtos.bin`) |
+| `0x10c5e30` | `LINUX` | 5 | `0x2ebc00` | Linux kernel for the Wi-Fi/USB side (`lx/kernel.bin`) |
+| `0x13b1a40` | `INITFS` | 6 | `0xd41800` | romfs ("-rom1fs-") for the Linux side; the userland in `rootfs/` was extracted from the Linux part (method not recorded, re-derive) |
+| `0x20f3250` | `SRIC` | 2 | `0xc000` | sub-processor firmware |
+| `0x20ff260` | `CPU` | | | sub-CPU data (different header type) |
+| `0x211f270` | `SHELLCMD` | 3 | `0x9240` | shell command name table |
+| `0x21284c0` | `ICONBIN` | 4 | `0x1181314` | UI icons |
+| `0x32a97e4` | `FDRVPARA` | | | drive parameters, then the `A:`/`B:` resource drives (fonts, sounds, JPEGs) |
+
+Drives seen in paths: `A:` / `B:` firmware resources, `C:` SD card,
+`F:` internal flash file system (persistent settings `F:\KB609.DOM`).
 
 ## Tooling
 
@@ -29,6 +46,7 @@ git rev `438ff331`).
   to a string (most string refs in this firmware are movw/movt pairs).
 - `tools/constref.py rtos.bin <const>`: same for 32-bit constants.
 - `tools/userdata_values.py rtos.bin`: regenerates `data/userdata_set_values.tsv`.
+- `tools/shell_usage.py rtos.bin data/shell_commands.tsv`: regenerates `data/shell_usage.tsv`.
 
 Example:
 
@@ -39,9 +57,11 @@ analyzeHeadless gproj gr3x -process -noanalysis -readOnly \
 
 ## Key addresses
 
+Full list with names: [`data/symbols.tsv`](../data/symbols.tsv).
+
 | What | Address |
 |---|---|
-| Shell command table | 585 `{name, handler}` entries in the RTOS image |
+| Shell command table | 584 `{name, handler}` entries (`SHELLCMD` section + handlers in RTOS) |
 | `UserData` shell | `0x53008038` → Get `FUN_53386230`, Set `FUN_5334688c` |
 | UserData model accessor | `FUN_5320ad88` / `FUN_5320b31c` |
 | Custom1 Standard saturation setter | `FUN_5325de5c(model, 0..8)` (via `0x532f2ccc`) |
@@ -57,5 +77,4 @@ analyzeHeadless gproj gr3x -process -noanalysis -readOnly \
 
 ## Other interfaces
 
-- Wi-Fi HTTP API: can only select an effect (incl. Custom 1/2), not edit params.
-- USB/MTP (`mtpd`): setters for saturation etc. exist but are dead code.
+See [interfaces.md](interfaces.md): camctl commands, Wi-Fi HTTP API, Linux side, USB/MTP.

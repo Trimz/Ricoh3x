@@ -2,6 +2,13 @@
 
 ## Reading values back (highest priority)
 
+**Partly solved:** `dd_out` exports all settings to `C:\KB609.DOM` (settings.md). Remaining:
+map each item's RAM offset (`store` column) to its position in the exported sub-records.
+Plan: one boot that exports, changes one known setting, exports again (renaming the file
+in between with TTL `filerename`), then sets it back and exports a third time; diff the files.
+
+Older notes:
+
 `UserData Get` and most shell commands print only to the debug log. Today the
 only way to see that output is the Flush Log section of an exception log, which
 needs a crash, so it isn't usable. Leads:

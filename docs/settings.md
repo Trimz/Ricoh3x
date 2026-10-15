@@ -26,7 +26,9 @@ therefore stored and persisted like a menu change. An unknown value prints
 [`data/userdata_set_values.tsv`](../data/userdata_set_values.tsv) lists **all 1,036
 items** accepted by `Set`. It is generated statically by
 [`tools/userdata_values.py`](../tools/userdata_values.py) from the firmware
-(columns: item, kind, values, setter, handler):
+(columns: item, kind, values, setter, handler, store). `store` is where the setter writes
+in the in-RAM UserData struct, e.g. `u8@0x2aa`; `*8` means the value is written to all 8
+struct copies (the model holds 8 struct pointers at +4..+0x20). 1,034 of 1,036 resolved.
 
 | Kind | Count | Value syntax |
 |---|---|---|
@@ -119,6 +121,25 @@ Caveats:
   registration). `AfterReleaseModeMemory*`: which settings are remembered.
   These are the route to loading complete user modes from the card, but they are
   untested and should be explored read-first.
+
+## Exporting all settings (read-back)
+
+`sendln 'dd_out'` in a script (or ModeSet `[USR_DAT_READ]`) writes every settings
+domain to `C:\KB609.DOM` (609 = model code). Verified on camera (test 5): 150 KB file,
+boot unaffected. The camera is not changed.
+
+Format: chunks `[char tag[4]][u32 len][data]`, tags `APP`, `HT`, `FE`, `INF`, `PF`, `DC`
+(`BE` also exists in code). Each chunk holds sub-records: a 0x3c-byte header (name such as
+`APData01.bin`, NUL-padded; 0x14 bytes if header words +0x14/+0x18 are non-zero), a u32
+size, then the data. `APP` contains `APData00`–`APData11`; `APData01`–`08` (0xb26 bytes
+each) are the 8 UserData struct copies, fields stored little-endian.
+
+Mapping file offsets to the RAM `store` offsets above is **not finished** (they don't line
+up 1:1 for every field). The safe way to pin it down is a diff test: export, change one
+known setting, export again. See open-questions.md.
+
+The import direction (`dd_in`, `[USR_DAT_WRITE]`) restores a whole package and is on the
+do-not-run list until the format is fully understood.
 
 ## Regenerating
 

@@ -26,47 +26,51 @@ Machine-readable: [`data/modeset_commands.tsv`](../data/modeset_commands.tsv).
 
 Command string table `0x538f2d94` (0x20 bytes/entry). Mapping table `0x53b5b6a0`:
 58 entries `{int16 cmdIndex, u8 devItem, u8 sub}`, dispatched by
-`FUN_532912a8` (OnModeSetMessage) → `FUN_53290c58`. Items 1–5, 21–23, 48–49,
-52–54 are handled inline (flags); the others open a controller/screen.
+`FUN_532912a8` (OnModeSetMessage) → `FUN_53290c58`. Dev items 1–6, 21–23, 48, 49 and 52–54 are
+handled inline in `FUN_53290c58`; the others go through a controller/screen and
+`FUN_536bf368`.
 
-| ModeSet line | dev item | sub | Likely meaning |
-|---|---|---|---|
-| `[DEBUG_MODE EN]` / `DIS` | 1 | 6 / 5 | debug camera mode |
-| `[WRITE_CF_VNDR EN]` / `DIS` | 3 | 1 / 2 | vendor write enable (unknown) |
-| `[SCRIPT_EN_MODE EN]` / `DIS` | 4 | 1 / 2 | **script support** |
-| `[SW_DEBUG_MENU EN]` / `DIS` | 5 | 1 / 2 | software debug menu |
-| `[USR_DAT_CLEAR]` | 6 | 0 | clear user settings |
-| `[DSP_ROM_STORE]` | 7 | 0 | write DSP ROM (!) |
-| `[ADJ_DAT_READ]` / `[ADJ_DAT_WRITE]` | 8 / 9 | 0 | factory calibration data to/from card (!) |
-| `[USR_DAT_READ]` / `[USR_DAT_WRITE]` | 10 / 11 | 0 | user settings to/from card |
-| `[CAM_LOG_DAT_READ]` | 12 | 0 | camera log to card |
-| `[USR_CLEAR_CAM_DISP]` | 13 | 0 | |
-| `[RELEASE_COUNT 0/10/25/50/100]` | 14–18 | 0 | shutter count manipulation (!) |
-| `[DEBUG_LOG_READ]` | 19 | 0 | debug log to card |
-| `[EXCEPTION_LOG_READ]` | 20 | 0 | exception log to card |
-| `[SERIAL_INPUT_EN_MODE EN]` / `DIS` | 21 | 1 / 2 | serial console input |
-| `[THERMAL_SHUTDOWN EN]` / `DIS` | 22 | 1 / 2 | thermal protection (!) |
-| `[WIFI_ADJ ON]` / `OFF` | 23 | 3 / 4 | |
-| `[WAIT_S1]` | 24 | 0 | |
-| `[SAVE_FLASH_FS]` | 25 | 0 | |
-| `[SR_PWM_OFF]` | 26 | 0 | shake-reduction actuator test |
-| `[SR_TRIPODCHECK_OFF]` | 27 | 0 | |
-| `[RELEASE_AGING]` | 28 | 0 | shutter aging test |
-| `[OPEN_DEBUG_MENU]` | 29 | 0 | debug menu |
-| `[OPEN_FACTORY_DEBUG_MENU]` | 30 | 0 | factory debug menu |
-| `[SCREEN_SHOT_MENU]` | 31 | 0 | |
-| `[SWITCH_TEST]` | 32 | 0 | button test |
-| `[CAM_LOG_DISP]` | 33 | 0 | |
-| `[INFORMATION]` | 35 | 0 | version screen |
-| `[ELECTRICLEVEL_CHECK]` | 36 | 0 | level sensor check |
-| `[SR_HALL_TEST]` | 41 | 0 | |
-| `[DEBUG_LOG_ERASE]` / `[EXCEPTION_LOG_ERASE]` | 42 / 43 | 0 | |
-| `[DBG_LOG_STORE_EN_MODE EN]` / `DIS` | 49 | 1 / 2 | **store debug log** |
-| `[WLAN_RF_TEST]` / `[BLE_RF_TEST]` | 50 / 51 | 0 | radio tests |
-| `[COLLAB_MODE STREET/ING/URBAN/DIARY_EDITION]` / `DIS` | 52 | 8/9/10/11 / 7 | special-edition branding |
-| `[DBG_LOG_PURGE_EN_MODE EN]` / `DIS` | 53 | 1 / 2 | |
-| `[LENS_FILTER_TYPE ND]` / `HDF` | 54 | 12 / 13 | GR IIIx HDF variant switch (!) |
-| `[WIFI_INFO_PASSKEY_INIT]` | 55 | 0 | reset Wi-Fi passkey |
+| ModeSet line | dev item | Action (ModeSet_Execute `FUN_536bf368` / DevItem `FUN_53290c58`) |
+|---|---|---|
+| `[DEBUG_MODE EN]` / `DIS` | 1 | flag +0x04 (Camera Mode Debug/Normal) |
+| `[WRITE_CF_VNDR EN]` / `DIS` | 3 | dev-item handler `FUN_53290714`; purpose unknown |
+| `[SCRIPT_EN_MODE EN]` / `DIS` | 4 | flag +0x10, **script support** (verified) |
+| `[SW_DEBUG_MENU EN]` / `DIS` | 5 | dev-item handler `FUN_5329081c` |
+| `[USR_DAT_CLEAR]` | 6 | **reset user settings** (`FUN_53828940` + `FUN_538280b0`) (!) |
+| `[DSP_ROM_STORE]` | 7 | write DSP ROM (!) |
+| `[ADJ_DAT_READ]` | 8 | factory calibration data → card (`FUN_5352809c`) |
+| `[ADJ_DAT_WRITE]` | 9 | card → **factory calibration data** (`FUN_53527c8c`) (!!) |
+| `[USR_DAT_READ]` | 10 | **export all settings** to `C:\KB<model>.DOM` (`FUN_53828ea8`), same as shell `dd_out` |
+| `[USR_DAT_WRITE]` | 11 | **import all settings** from `C:\KB<model>.DOM` (`FUN_53828410`), same as shell `dd_in` (!) |
+| `[CAM_LOG_DAT_READ]` | 12 | camera log → card (`FUN_5353cd84`) |
+| `[USR_CLEAR_CAM_DISP]` | 13 | |
+| `[RELEASE_COUNT 0/10/25/50/100]` | 14–18 | shutter count manipulation (!) |
+| `[DEBUG_LOG_READ]` | 19 | debug log → `C:\log%d.txt` (`FUN_536b98d0(0)`) |
+| `[EXCEPTION_LOG_READ]` | 20 | exception logs → `C:\except%d.txt` (`FUN_536c1958(0)`) |
+| `[SERIAL_INPUT_EN_MODE EN]` / `DIS` | 21 | flag +0x30 (serial console input) |
+| `[THERMAL_SHUTDOWN EN]` / `DIS` | 22 | flag +0x38, inverted (DIS disables thermal protection) (!) |
+| `[WIFI_ADJ ON]` / `OFF` | 23 | |
+| `[WAIT_S1]` | 24 | |
+| `[SAVE_FLASH_FS]` | 25 | |
+| `[SR_PWM_OFF]` | 26 | shake-reduction actuator test |
+| `[SR_TRIPODCHECK_OFF]` | 27 | |
+| `[RELEASE_AGING]` | 28 | shutter aging test |
+| `[OPEN_DEBUG_MENU]` | 29 | opens debug menu screen |
+| `[OPEN_FACTORY_DEBUG_MENU]` | 30 | opens factory debug menu |
+| `[SCREEN_SHOT_MENU]` | 31 | |
+| `[SWITCH_TEST]` | 32 | button test screen |
+| `[CAM_LOG_DISP]` | 33 | |
+| `[INFORMATION]` | 35 | version screen (verified) |
+| `[ELECTRICLEVEL_CHECK]` | 36 | level sensor check (`FUN_536b0a74(0x40)`) |
+| `[SR_HALL_TEST]` | 41 | |
+| `[DEBUG_LOG_ERASE]` / `[EXCEPTION_LOG_ERASE]` | 42 / 43 | erase logs (`FUN_536b9d9c` / `FUN_536c1c34`) |
+| `[DBG_LOG_STORE_EN_MODE EN]` / `DIS` | 49 | flag +0x20, **store debug log** (verified) |
+| `[WLAN_RF_TEST]` / `[BLE_RF_TEST]` | 50 / 51 | radio tests (!) |
+| `[COLLAB_MODE STREET/ING/URBAN/DIARY_EDITION]` / `DIS` | 52 | +0x48 = 1/2/3/4, 0: special-edition branding (!) |
+| `[DBG_LOG_PURGE_EN_MODE EN]` / `DIS` | 53 | flag +0x4c |
+| `[LENS_FILTER_TYPE ND]` / `HDF` | 54 | `FUN_536b468c(0/1)`: selects ND vs HDF filter type, i.e. the GR IIIx / GR IIIx HDF hardware variant (!) |
+| `[WIFI_INFO_PASSKEY_INIT]` | 55 | reset Wi-Fi passkey |
 
-"Likely meaning" is inferred from names only. (!) marks commands that could
-change factory data, counters or hardware identity. See SAFETY.md.
+"Flag +0xNN" = a word in the persistent developer flag block (`0x5aa5a55a` = on),
+saved by `FUN_53527514`. Blank = not analysed. (!) = changes factory data,
+counters, protection or hardware identity; see SAFETY.md.

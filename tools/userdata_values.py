@@ -159,13 +159,86 @@ def analyse(h):
     return ('enum' if toks else '?'), toks, setter
 
 
+def numeric_setter(h):
+    """First call after the model getters in a numeric handler is the setter."""
+    a, seen_getter = h, False
+    for _ in range(40):
+        t = call_target(a, w(a))
+        if t in MODEL_GETTERS:
+            seen_getter = True
+        elif t is not None and seen_getter:
+            return t
+        a += 4
+    return None
+
+
+def store_offset(s):
+    """Where a setter stores its value in the UserData struct.
+
+    The model object holds 8 struct pointers at +4..+0x20. Setters either load
+    the first (`ldr rB,[r0,#4]`) or loop over all of them (`ldr rB,[rX,#4]!`,
+    suffix `*8`), then store the value (r1, s0, or a copy of r1) with
+    strb/strh/str/vstr at an immediate or movw-loaded register offset.
+    Returns (width, offset) or None.
+    """
+    model, val, base, add, regimm, loop = {0}, {1}, None, {}, {}, False
+    for k in range(16):
+        x = w(s + 4 * k)
+        rn, rd = (x >> 16) & 15, (x >> 12) & 15
+        if (x & 0x0FFF0FF0) == 0x01A00000:  # cpy rd,rm
+            rm = x & 15
+            if rm in model:
+                model.add(rd)
+            if rm in val:
+                val.add(rd)
+            continue
+        if (x & 0x0FF00FFF) == 0x05900004 and rn in model:  # ldr rB,[rM,#4]
+            base = rd
+            continue
+        if (x & 0x0FF00FFF) == 0x05B00004 and rn in model:  # ldr rB,[rM,#4]!
+            base, loop = rd, True
+            continue
+        if (x & 0x0FF00000) == 0x03000000:  # movw rd,#imm
+            regimm[rd] = imm16(x)
+            continue
+        if base is None:
+            continue
+        if (x & 0x0FF00000) == 0x02800000 and rn == base:  # add rD,rB,#imm
+            add[rd] = arm_imm(x)
+            continue
+        if rn != base and rn not in add:
+            continue
+        extra = add.get(rn, 0) if rn != base else 0
+        tag = '*8' if loop else ''
+        if rd in val:
+            if (x & 0x0FF00000) == 0x05C00000:
+                return 'u8' + tag, extra + (x & 0xFFF)
+            if (x & 0x0FF00000) == 0x05800000:
+                return 'u32' + tag, extra + (x & 0xFFF)
+            if (x & 0x0FF000F0) == 0x01C000B0:  # strh imm
+                return 'u16' + tag, extra + (((x >> 4) & 0xF0) | (x & 0xF))
+            if (x & 0x0FF00FF0) == 0x018000B0 and (x & 15) in regimm:  # strh rd,[rB,rM]
+                return 'u16' + tag, extra + regimm[x & 15]
+            if (x & 0x0FF00FF0) == 0x07C00000 and (x & 15) in regimm:  # strb rd,[rB,rM]
+                return 'u8' + tag, extra + regimm[x & 15]
+            if (x & 0x0FF00FF0) == 0x07800000 and (x & 15) in regimm:  # str rd,[rB,rM]
+                return 'u32' + tag, extra + regimm[x & 15]
+        if (x & 0x0FB00F00) == 0x0D800A00 and rd == 0 and not (x >> 22) & 1:
+            return 'f32' + tag, extra + (x & 0xFF) * 4  # vstr s0,[rB,#imm*4]
+    return None
+
+
 def main():
-    print('item\tkind\tvalues\tsetter\thandler')
+    print('item\tkind\tvalues\tsetter\thandler\tstore')
     for item, t in item_chain():
         h = tail(t)
         kind, toks, setter = analyse(h)
+        if setter is None and kind in ('int', 'float'):
+            setter = numeric_setter(h)
+        off = store_offset(setter) if setter else None
         vals = ' '.join(f'{k}={v}' if v is not None else k for k, v in toks)
-        print(f'{item}\t{kind}\t{vals}\t{setter and hex(setter) or ""}\t{h:#x}')
+        offs = f'{off[0]}@{off[1]:#x}' if off else ''
+        print(f'{item}\t{kind}\t{vals}\t{setter and hex(setter) or ""}\t{h:#x}\t{offs}')
 
 
 if __name__ == '__main__':

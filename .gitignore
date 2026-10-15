@@ -13,3 +13,7 @@ gproj_mtp/
 
 .DS_Store
 ._*
+
+# personal camera data exported from the user's camera (may contain Wi-Fi credentials, serials)
+camdata/
+*.DOM
