@@ -43,8 +43,12 @@ Caveats:
   clamps is unknown, so never write a number you haven't seen the camera use
   itself.
 - `Netherlandish ` (SetupLanguage) contains a trailing space in the firmware.
-- Verified on camera so far: `StillImageControlNo2` and
-  `StillImageControlNo2ParamStandardSaturation`. Everything else is static analysis.
+- Verified on camera (set, exported, decoded, restored; tests 4 and 8), one per kind:
+  `StillImageControlNo2`, `StillImageControlNo2ParamStandardSaturation`,
+  `StillImageControlNo1ParamStandardContrast` (Image Control), `StillAutoHorizon` (on/off),
+  `StillJpegSize` (enum), `StillSvAutoUpper` (float), `StillWhiteBalanceColorTemp` (int, u16),
+  `SetupLcdBrightness` (setup, `*8`), `CustomGridLine` (customisation),
+  `CustomQuickViewTimeMsec` (u32 `*8`). The rest share the same code paths but are untested.
 
 ### Groups
 
@@ -146,10 +150,15 @@ python3 -I tools/dom_parse.py KB609.DOM data/userdata_set_values.tsv [name-filte
 1,034 items decode; the user confirmed Image Control slot, Custom 2 saturation, ISO auto
 limits, auto power off, focus mode and snap distance against the camera menus.
 
-**Timing:** an export taken as the very first action of `startup.ttl` returned factory
-defaults (the saved settings were not loaded yet), and a setting changed right after it
-did not show up in the next export either. A later export in the same boot had the real
-values. Export at power-off (`shutdown.ttl`) or after other work in the script.
+**What an export contains (tests 6–8):** `dd_out` exports the last **saved** settings, not
+the live values in memory.
+- `UserData Set` in `startup.ttl` changes the live value at once (visible in the menu) and is
+  saved by the time `shutdown.ttl` runs, so an export at power-off shows it.
+- An export at the very start of `startup.ttl` returned factory defaults (saved settings not
+  loaded yet).
+- `UserData Set` in `shutdown.ttl` is **not saved**: the save happens before that script runs.
+
+Recommended pattern: set values in `startup.ttl`, export in `shutdown.ttl`.
 
 The import direction (`dd_in`, `[USR_DAT_WRITE]`) restores a whole package and is on the
 do-not-run list until the format is fully understood.

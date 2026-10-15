@@ -1,0 +1,15 @@
+; step8 round1 startup: set values
+filecreate fh 'C:\ttl_8.txt'
+filewriteln fh 'round1 start'
+fileclose fh
+sendln 'UserData Set StillAutoHorizon On'
+sendln 'UserData Set StillJpegSize M'
+sendln 'UserData Set StillSvAutoUpper 10.0'
+sendln 'UserData Set StillWhiteBalanceColorTemp 5500'
+sendln 'UserData Set SetupLcdBrightness P1'
+sendln 'UserData Set CustomGridLine Div16'
+sendln 'UserData Set CustomQuickViewTimeMsec 1000msec'
+sendln 'UserData Set StillImageControlNo1ParamStandardContrast P1'
+fileopen fh 'C:\ttl_8.txt' 1
+filewriteln fh 'round1 values set'
+fileclose fh

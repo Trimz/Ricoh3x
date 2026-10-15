@@ -16,6 +16,8 @@ between experiments. Read ../docs/SAFETY.md first.
 | `step4_userdata_set/` | normal | **writes** Custom 2 = Standard, Saturation +2 | verified |
 | `step5_export_settings/` | normal | exports all settings to `C:\KB609.DOM` (`dd_out`) | verified, read-only; too early in boot (defaults) |
 | `step6_export_diff/` | normal | export / set Custom 2 sat P3 / export / set P2 / export | verified |
+| `step7_verify_batch/` | normal on/off | sets in shutdown.ttl (not saved; kept as evidence) | verified, no effect |
+| `step8_verify_two_round/round1`, `round2` | normal on/off | **set 8 settings** / restore them, export at power-off | verified |
 | `_DO_NOT_USE_crashes/` | — | scripts that crashed the camera; kept as evidence only | **do not use** |
 
 Remember: delete `script/startup.ttl` after it has run once.

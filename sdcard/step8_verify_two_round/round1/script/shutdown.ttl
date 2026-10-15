@@ -1,0 +1,5 @@
+; step8 round1 shutdown: export saved settings
+sendln 'dd_out'
+fileopen fh 'C:\ttl_8.txt' 1
+filewriteln fh 'round1 export done'
+fileclose fh

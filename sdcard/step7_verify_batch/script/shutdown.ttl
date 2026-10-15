@@ -1,0 +1,34 @@
+; step7 shutdown: export A, set 8 test values, export B, restore originals, export C (KB609.DOM)
+filecreate fh 'C:\ttl_7.txt'
+filewriteln fh 'start'
+fileclose fh
+sendln 'dd_out'
+filerename 'C:\KB609.DOM' 'C:\A7.DOM'
+fileopen fh 'C:\ttl_7.txt' 1
+filewriteln fh 'export A done'
+fileclose fh
+sendln 'UserData Set StillAutoHorizon On'
+sendln 'UserData Set StillJpegSize M'
+sendln 'UserData Set StillSvAutoUpper 10.0'
+sendln 'UserData Set StillWhiteBalanceColorTemp 5500'
+sendln 'UserData Set SetupLcdBrightness P1'
+sendln 'UserData Set CustomGridLine Div16'
+sendln 'UserData Set CustomQuickViewTimeMsec 1000msec'
+sendln 'UserData Set StillImageControlNo1ParamStandardContrast P1'
+sendln 'dd_out'
+filerename 'C:\KB609.DOM' 'C:\B7.DOM'
+fileopen fh 'C:\ttl_7.txt' 1
+filewriteln fh 'test values set, export B done'
+fileclose fh
+sendln 'UserData Set StillAutoHorizon Off'
+sendln 'UserData Set StillJpegSize L'
+sendln 'UserData Set StillSvAutoUpper 11.0'
+sendln 'UserData Set StillWhiteBalanceColorTemp 5000'
+sendln 'UserData Set SetupLcdBrightness Normal'
+sendln 'UserData Set CustomGridLine Div9'
+sendln 'UserData Set CustomQuickViewTimeMsec 500msec'
+sendln 'UserData Set StillImageControlNo1ParamStandardContrast OFF'
+sendln 'dd_out'
+fileopen fh 'C:\ttl_7.txt' 1
+filewriteln fh 'originals restored, export C done'
+fileclose fh

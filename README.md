@@ -22,7 +22,7 @@ reboots. No firmware modification is involved.
 | Developer "ModeSet" commands from the card (MENU + power) | 3 of 58 commands tested | [modeset.md](docs/modeset.md) |
 | Startup/shutdown scripts from the card (Tera Term macro dialect) | working | [scripting.md](docs/scripting.md) |
 | Run internal shell commands from a script (584 commands) | working; some crash | [scripting.md](docs/scripting.md) |
-| **Write any UserData setting by name** (1,036 items, value tables) | working; 2 items verified on camera | [settings.md](docs/settings.md) |
+| **Write any UserData setting by name** (1,036 items, value tables) | working; 10 items covering every value kind verified on camera | [settings.md](docs/settings.md) |
 | Image Control Custom 1/2 (all parameters per base effect) | working | [image-control.md](docs/image-control.md) |
 | **Read all settings**: export (`dd_out` → `KB609.DOM`) + decoder `tools/dom_parse.py` | working, verified against the menus | [settings.md](docs/settings.md#exporting-all-settings-read-back) |
 | camctl remote-control commands (93) | documented, untested | [interfaces.md](docs/interfaces.md) |
@@ -40,8 +40,8 @@ reboots. No firmware modification is involved.
    sendln 'UserData Set StillImageControlNo2ParamStandardSaturation P2'
    ```
 3. Power on normally. Then **delete the script** from the card.
-4. To read everything back: a script with `sendln 'dd_out'` (export at power-off or after
-   other commands, not as the first line), then
+4. To read everything back: put `sendln 'dd_out'` in `script/shutdown.ttl` (exports show the
+   last saved settings), then
    `python3 -I tools/dom_parse.py KB609.DOM data/userdata_set_values.tsv`.
 
 Valid item names and values: [data/userdata_set_values.tsv](data/userdata_set_values.tsv).

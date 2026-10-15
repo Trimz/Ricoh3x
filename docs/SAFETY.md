@@ -78,6 +78,11 @@ good reason and explicit user consent:
 - Debug-log storage (`DBG_LOG_STORE_EN_MODE EN`) — makes exception logs contain a
   "Flush Log" section. Undo: `sdcard/undo_debuglog/` via MENU+power.
 
+## Timing rules learned the hard way
+
+- Change settings in `startup.ttl`. Changes made in `shutdown.ttl` are not saved.
+- Export (`dd_out`) in `shutdown.ttl`, never as the first line of `startup.ttl` (defaults).
+
 ## Personal data
 
 Settings exports (`KB609.DOM`) contain the owner's configuration and probably Wi-Fi

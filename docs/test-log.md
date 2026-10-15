@@ -20,5 +20,8 @@ Card layouts are in [`sdcard/`](../sdcard).
 | 4b | 2026-10-15 | (script removed) | normal | Custom 2 still Saturation +2: **persistent** |
 | 5 | 2026-10-15 | `step5_export_settings` | normal | `sendln 'dd_out'` wrote `C:\KB609.DOM` (150,512 bytes); boot normal. Chunks APP/HT/FE/INF/PF/DC. |
 | 6 | 2026-10-15 | `step6_export_diff` | normal | export A, set Custom 2 Std saturation P3, export B, set P2, export C. `filerename` works. A and B = factory defaults (too early in boot); C = real values and differs from A exactly at table offsets 0x1c0/0x1c2/0x38c → **APData01 offset = store offset**. Parsed C confirmed by the user in the menus. Script ran on two boots. |
+| 7 | 2026-10-15 | `step7_verify_batch` | normal on/off | in `shutdown.ttl`: export, set 8 values, export, restore, export. All three exports identical → exports show the **saved** state and sets made in `shutdown.ttl` are never saved. Camera unchanged. |
+| 8a | 2026-10-15 | `step8_verify_two_round/round1` | normal on/off | `startup.ttl` sets 8 values, `shutdown.ttl` exports. All 8 changed exactly as intended, nothing else (except lens focus position). User saw Custom 1 contrast +1 in the menu. |
+| 8b | 2026-10-15 | `step8_verify_two_round/round2` | normal on/off | same with the original values. Export identical to the pre-test export (0 differences). User saw Custom 1 contrast back at 0. |
 
 Exception logs: `camlogs/2d` (from tests 2–2d), `camlogs/3b` (test 3).
